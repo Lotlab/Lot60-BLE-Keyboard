@@ -1,8 +1,28 @@
-update=2018-02-21 16:20:23
+update=Mon 01 Jul 2013 11:05:52 PM CEST
 version=1
-last_client=kicad
+last_client=cvpcb
 [general]
 version=1
+[eeschema]
+version=1
+LibDir=lib
+NetFmtName=Pcbnew
+HPGLSpd=20
+HPGLDm=15
+HPGLNum=1
+RptD_X=0
+RptD_Y=100
+RptLab=1
+LabSize=60
+[eeschema/libraries]
+LibName1=power
+LibName2=mx1a-simple
+LibName3=aker
+LibName4=atmega32u4
+LibName5=dtsjw
+LibName6=oupiin_usb
+LibName7=device
+LibName8=conn
 [pcbnew]
 version=1
 LastNetListRead=
@@ -38,6 +58,3 @@ version=1
 NetIExt=net
 [cvpcb/libraries]
 EquName1=devcms
-[eeschema]
-version=1
-LibDir=

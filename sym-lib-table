@@ -1,0 +1,11 @@
+(sym_lib_table
+  (lib (name power1)(type Legacy)(uri D:/Work/ELE/GH60BLE/lib/power.lib)(options "")(descr ""))
+  (lib (name mx1a-simple)(type Legacy)(uri D:/Work/ELE/GH60BLE/lib/mx1a-simple.lib)(options "")(descr ""))
+  (lib (name aker)(type Legacy)(uri D:/Work/ELE/GH60BLE/lib/aker.lib)(options "")(descr ""))
+  (lib (name atmega32u4)(type Legacy)(uri D:/Work/ELE/GH60BLE/lib/atmega32u4.lib)(options "")(descr ""))
+  (lib (name dtsjw)(type Legacy)(uri D:/Work/ELE/GH60BLE/lib/dtsjw.lib)(options "")(descr ""))
+  (lib (name oupiin_usb)(type Legacy)(uri D:/Work/ELE/GH60BLE/lib/oupiin_usb.lib)(options "")(descr ""))
+  (lib (name device1)(type Legacy)(uri D:/Work/ELE/GH60BLE/lib/device.lib)(options "")(descr ""))
+  (lib (name conn1)(type Legacy)(uri D:/Work/ELE/GH60BLE/lib/conn.lib)(options "")(descr ""))
+  (lib (name keyboard-rescue)(type Legacy)(uri ${KIPRJMOD}/keyboard-rescue.lib)(options "")(descr ""))
+)
