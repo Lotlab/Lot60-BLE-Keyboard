@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:keyboard-cache
-LIBS:ble4100-nrf-cache
 EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
@@ -939,10 +938,10 @@ col13
 Text HLabel 12700 1400 1    60   3State ~ 0
 col14
 $Comp
-L device1:R R4
+L device1:R RL0
 U 1 1 5043A0D0
 P 14550 3000
-F 0 "R4" V 14630 3000 50  0000 C CNN
+F 0 "RL0" V 14630 3000 50  0000 C CNN
 F 1 "300" V 14550 3000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 14550 3000 60  0001 C CNN
 F 3 "" H 14550 3000 60  0001 C CNN
