@@ -1,13 +1,14 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# conn:USB_OTG
+# Connector_Specialized_USB_B_Mini
 #
-DEF conn:USB_OTG J 0 40 Y Y 1 F N
+DEF Connector_Specialized_USB_B_Mini J 0 40 Y Y 1 F N
 F0 "J" -200 450 50 H V L CNN
-F1 "conn:USB_OTG" -200 350 50 H V L CNN
+F1 "Connector_Specialized_USB_B_Mini" -200 350 50 H V L CNN
 F2 "" 150 -50 50 H I C CNN
 F3 "" 150 -50 50 H I C CNN
+ALIAS USB_B_Mini
 $FPLIST
  USB*
 $ENDFPLIST
@@ -27,20 +28,78 @@ P 4 0 1 10 -100 85 -75 85 -50 35 0 35 N
 P 4 0 1 10 25 110 25 60 75 85 25 110 F
 P 5 0 1 0 -170 220 -70 220 -80 190 -160 190 -170 220 F
 P 9 0 1 0 -185 230 -185 220 -175 190 -175 180 -65 180 -65 190 -55 220 -55 230 -185 230 N
-X VBUS 1 300 200 100 L 50 50 1 1 W
+X VBUS 1 300 200 100 L 50 50 1 1 w
 X D- 2 300 -100 100 L 50 50 1 1 P
 X D+ 3 300 0 100 L 50 50 1 1 P
 X ID 4 300 -200 100 L 50 50 1 1 P
-X GND 5 0 -400 100 U 50 50 1 1 W
+X GND 5 0 -400 100 U 50 50 1 1 w
 X Shield 6 -100 -400 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# device1:DIODE
+# Device_C_Small
 #
-DEF device1:DIODE D 0 40 N N 1 F N
+DEF Device_C_Small C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "Device_C_Small" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *:C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_LED
+#
+DEF Device_LED D 0 40 Y N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *:R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# device1_DIODE
+#
+DEF device1_DIODE D 0 40 N N 1 F N
 F0 "D" 0 100 40 H V C CNN
-F1 "device1:DIODE" 0 -100 40 H V C CNN
+F1 "device1_DIODE" 0 -100 40 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -55,11 +114,11 @@ X K 2 200 0 150 L 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# device1:LED
+# device1_LED
 #
-DEF device1:LED D 0 40 Y N 1 F N
+DEF device1_LED D 0 40 Y N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "device1:LED" 0 -100 50 H V C CNN
+F1 "device1_LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -81,11 +140,11 @@ X K 2 200 0 150 L 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# device1:R
+# device1_R
 #
-DEF device1:R R 0 0 N Y 1 F N
+DEF device1_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "device1:R" 0 0 50 V V C CNN
+F1 "device1_R" 0 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -102,50 +161,11 @@ X ~ 2 0 -250 100 U 60 60 1 1 P
 ENDDRAW
 ENDDEF
 #
-# device:LED
+# keyboard-rescue_CH554T-ch554t
 #
-DEF device:LED D 0 40 Y N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "device:LED" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- LED*
-$ENDFPLIST
-DRAW
-P 2 0 1 8 -50 -50 -50 50 N
-P 2 0 1 0 -50 0 50 0 N
-P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
-P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
-P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# device:R
-#
-DEF device:R R 0 0 N Y 1 F N
-F0 "R" 80 0 50 V V C CNN
-F1 "device:R" 0 0 50 V V C CNN
-F2 "" -70 0 50 V I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- R_*
- R_*
-$ENDFPLIST
-DRAW
-S -40 -100 40 100 0 1 10 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# keyboard-rescue:CH554T-ch554t
-#
-DEF keyboard-rescue:CH554T-ch554t U 0 40 Y Y 1 F N
+DEF keyboard-rescue_CH554T-ch554t U 0 40 Y Y 1 F N
 F0 "U" 0 50 60 H V C CNN
-F1 "keyboard-rescue:CH554T-ch554t" 0 -50 60 H V C CNN
+F1 "keyboard-rescue_CH554T-ch554t" 0 -50 60 H V C CNN
 F2 "" 50 0 60 H I C CNN
 F3 "" 50 0 60 H I C CNN
 DRAW
@@ -173,11 +193,11 @@ X P3.1 9 -650 -350 200 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# keyboard-rescue:CONN_01X02-RESCUE-ble4100-nrf-ble4100-nrf-rescue
+# keyboard-rescue_CONN_01X02-RESCUE-ble4100-nrf-ble4100-nrf-rescue
 #
-DEF keyboard-rescue:CONN_01X02-RESCUE-ble4100-nrf-ble4100-nrf-rescue J 0 40 Y N 1 F N
+DEF keyboard-rescue_CONN_01X02-RESCUE-ble4100-nrf-ble4100-nrf-rescue J 0 40 Y N 1 F N
 F0 "J" 0 150 50 H V C CNN
-F1 "keyboard-rescue:CONN_01X02-RESCUE-ble4100-nrf-ble4100-nrf-rescue" 100 0 50 V V C CNN
+F1 "keyboard-rescue_CONN_01X02-RESCUE-ble4100-nrf-ble4100-nrf-rescue" 100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -195,11 +215,11 @@ X P2 2 -200 -50 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# keyboard-rescue:CONN_01X04-RESCUE-ble4100-nrf-ble4100-nrf-rescue
+# keyboard-rescue_CONN_01X04-RESCUE-ble4100-nrf-ble4100-nrf-rescue
 #
-DEF keyboard-rescue:CONN_01X04-RESCUE-ble4100-nrf-ble4100-nrf-rescue J 0 40 Y N 1 F N
+DEF keyboard-rescue_CONN_01X04-RESCUE-ble4100-nrf-ble4100-nrf-rescue J 0 40 Y N 1 F N
 F0 "J" 0 250 50 H V C CNN
-F1 "keyboard-rescue:CONN_01X04-RESCUE-ble4100-nrf-ble4100-nrf-rescue" 100 0 50 V V C CNN
+F1 "keyboard-rescue_CONN_01X04-RESCUE-ble4100-nrf-ble4100-nrf-rescue" 100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -221,11 +241,11 @@ X P4 4 -200 -150 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# keyboard-rescue:C_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue
+# keyboard-rescue_C_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue
 #
-DEF keyboard-rescue:C_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue C 0 10 N N 1 F N
+DEF keyboard-rescue_C_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "keyboard-rescue:C_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue" 10 -80 50 H V L CNN
+F1 "keyboard-rescue_C_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -239,11 +259,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue
+# keyboard-rescue_GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue
 #
-DEF keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR 0 0 Y Y 1 F P
+DEF keyboard-rescue_GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue" 0 -150 50 H V C CNN
+F1 "keyboard-rescue_GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -252,11 +272,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# keyboard-rescue:Jumper_NO_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue
+# keyboard-rescue_Jumper_NO_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue
 #
-DEF keyboard-rescue:Jumper_NO_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue JP 0 30 N N 1 F N
+DEF keyboard-rescue_Jumper_NO_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue JP 0 30 N N 1 F N
 F0 "JP" 0 80 50 H V C CNN
-F1 "keyboard-rescue:Jumper_NO_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue" 10 -60 50 H V C CNN
+F1 "keyboard-rescue_Jumper_NO_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue" 10 -60 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -267,11 +287,11 @@ X 2 2 100 0 40 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# keyboard-rescue:RT9193-RESCUE-ble4100-nrf-ble4100-nrf-rescue
+# keyboard-rescue_RT9193-RESCUE-ble4100-nrf-ble4100-nrf-rescue
 #
-DEF keyboard-rescue:RT9193-RESCUE-ble4100-nrf-ble4100-nrf-rescue U 0 40 Y Y 1 F N
+DEF keyboard-rescue_RT9193-RESCUE-ble4100-nrf-ble4100-nrf-rescue U 0 40 Y Y 1 F N
 F0 "U" 0 -100 60 H V C CNN
-F1 "keyboard-rescue:RT9193-RESCUE-ble4100-nrf-ble4100-nrf-rescue" 0 -200 60 H V C CNN
+F1 "keyboard-rescue_RT9193-RESCUE-ble4100-nrf-ble4100-nrf-rescue" 0 -200 60 H V C CNN
 F2 "" -50 50 60 H I C CNN
 F3 "" -50 50 60 H I C CNN
 DRAW
@@ -284,11 +304,11 @@ X VOUT 5 450 250 200 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# keyboard-rescue:R_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue
+# keyboard-rescue_R_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue
 #
-DEF keyboard-rescue:R_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue R 0 10 N N 1 F N
+DEF keyboard-rescue_R_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "keyboard-rescue:R_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue" 30 -40 50 H V L CNN
+F1 "keyboard-rescue_R_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -301,11 +321,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# keyboard-rescue:TP4057-RESCUE-ble4100-nrf-ble4100-nrf-rescue
+# keyboard-rescue_TP4057-RESCUE-ble4100-nrf-ble4100-nrf-rescue
 #
-DEF keyboard-rescue:TP4057-RESCUE-ble4100-nrf-ble4100-nrf-rescue U 0 40 Y Y 1 F N
+DEF keyboard-rescue_TP4057-RESCUE-ble4100-nrf-ble4100-nrf-rescue U 0 40 Y Y 1 F N
 F0 "U" 0 -250 60 H V C CNN
-F1 "keyboard-rescue:TP4057-RESCUE-ble4100-nrf-ble4100-nrf-rescue" 0 -150 60 H V C CNN
+F1 "keyboard-rescue_TP4057-RESCUE-ble4100-nrf-ble4100-nrf-rescue" 0 -150 60 H V C CNN
 F2 "" 50 -50 60 H I C CNN
 F3 "" 50 -50 60 H I C CNN
 DRAW
@@ -319,11 +339,11 @@ X PROG 6 -450 0 200 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# keyboard-rescue:nrf51822-02-RESCUE-ble4100-nrf-ble4100-nrf-rescue
+# keyboard-rescue_nrf51822-02-RESCUE-ble4100-nrf-ble4100-nrf-rescue
 #
-DEF keyboard-rescue:nrf51822-02-RESCUE-ble4100-nrf-ble4100-nrf-rescue U 0 40 Y Y 1 F N
+DEF keyboard-rescue_nrf51822-02-RESCUE-ble4100-nrf-ble4100-nrf-rescue U 0 40 Y Y 1 F N
 F0 "U" 0 -50 60 H V C CNN
-F1 "keyboard-rescue:nrf51822-02-RESCUE-ble4100-nrf-ble4100-nrf-rescue" 0 50 60 H V C CNN
+F1 "keyboard-rescue_nrf51822-02-RESCUE-ble4100-nrf-ble4100-nrf-rescue" 0 50 60 H V C CNN
 F2 "" 0 -50 60 H I C CNN
 F3 "" 0 -50 60 H I C CNN
 DRAW
@@ -371,11 +391,11 @@ X D0.06 9 200 950 200 D 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# mx1a-simple:MX1A
+# mx1a-simple_MX1A
 #
-DEF mx1a-simple:MX1A S 0 40 Y Y 1 F N
+DEF mx1a-simple_MX1A S 0 40 Y Y 1 F N
 F0 "S" -150 250 60 H V C CNN
-F1 "mx1a-simple:MX1A" 0 100 60 H V C CNN
+F1 "mx1a-simple_MX1A" 0 100 60 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -386,11 +406,11 @@ X ~ 2 200 150 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# power:GND
+# power_GND
 #
-DEF power:GND #PWR 0 0 Y Y 1 F P
+DEF power_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GND" 0 -150 50 H V C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW

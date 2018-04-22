@@ -183,7 +183,7 @@ F 3 "" H 10750 4950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:C_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue C5
+L Device:C_Small C5
 U 1 1 58689C6E
 P 7900 5750
 F 0 "C5" H 7910 5820 50  0000 L CNN
@@ -194,7 +194,7 @@ F 3 "" H 7900 5750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:C_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue C6
+L Device:C_Small C6
 U 1 1 58689C99
 P 8100 5750
 F 0 "C6" H 8110 5820 50  0000 L CNN
@@ -231,7 +231,7 @@ F 3 "" H 8000 5950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:C_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue C4
+L Device:C_Small C4
 U 1 1 5868B8D5
 P 7650 5750
 F 0 "C4" H 7660 5820 50  0000 L CNN
@@ -286,11 +286,11 @@ F 3 "" H 8950 5750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:C_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue C7
+L Device:C_Small C7
 U 1 1 5869898F
 P 8700 5750
 F 0 "C7" H 8710 5820 50  0000 L CNN
-F 1 "22uF" H 8710 5670 50  0000 L CNN
+F 1 "10nF" H 8710 5670 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 8700 5750 50  0001 C CNN
 F 3 "" H 8700 5750 50  0000 C CNN
 	1    8700 5750
@@ -417,7 +417,7 @@ F 3 "" H 3250 5500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:C_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue C1
+L Device:C_Small C1
 U 1 1 5A0D902C
 P 1550 6000
 F 0 "C1" H 1560 6070 50  0000 L CNN
@@ -428,7 +428,7 @@ F 3 "" H 1550 6000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:C_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue C2
+L Device:C_Small C2
 U 1 1 5A0D91A2
 P 1850 6000
 F 0 "C2" H 1860 6070 50  0000 L CNN
@@ -539,18 +539,16 @@ F 3 "" H 2950 6200 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L keyboard-rescue:C_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue C3
+L Device:C_Small C3
 U 1 1 5A0DBAA2
 P 3100 6350
 F 0 "C3" H 3110 6420 50  0000 L CNN
-F 1 "47pF" H 3110 6270 50  0000 L CNN
+F 1 "NC/47pF" H 3110 6270 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 3100 6350 50  0001 C CNN
 F 3 "" H 3100 6350 50  0000 C CNN
 	1    3100 6350
 	1    0    0    -1  
 $EndComp
-Text GLabel 3700 6200 2    60   Input ~ 0
-VCC
 Text GLabel 2700 6200 0    60   Input ~ 0
 UD_P
 Wire Wire Line
@@ -611,9 +609,9 @@ F 3 "" H 2600 2200 60  0001 C CNN
 	1    2600 2250
 	1    0    0    -1  
 $EndComp
-Text GLabel 2300 3200 3    60   Input ~ 0
+Text GLabel 3000 3200 3    60   Input ~ 0
 RXD
-Text GLabel 2400 3200 3    60   Input ~ 0
+Text GLabel 3550 2850 2    60   Input ~ 0
 TXD
 Wire Bus Line
 	3950 1300 5050 1300
@@ -624,9 +622,7 @@ Entry Wire Line
 Entry Wire Line
 	2800 3400 2900 3500
 Entry Wire Line
-	2900 3400 3000 3500
-Entry Wire Line
-	3000 3400 3100 3500
+	2500 3400 2600 3500
 Entry Wire Line
 	3850 1650 3950 1750
 Entry Wire Line
@@ -648,7 +644,7 @@ Entry Wire Line
 Entry Wire Line
 	3850 2550 3950 2650
 Entry Wire Line
-	3850 2850 3950 2950
+	2400 3400 2500 3500
 Wire Wire Line
 	3550 1650 3850 1650
 Wire Wire Line
@@ -669,12 +665,6 @@ Wire Wire Line
 	3550 2450 3850 2450
 Wire Wire Line
 	3850 2550 3550 2550
-Wire Wire Line
-	3550 2850 3850 2850
-Wire Wire Line
-	3000 3200 3000 3400
-Wire Wire Line
-	2900 3400 2900 3200
 Wire Wire Line
 	2800 3200 2800 3400
 Wire Wire Line
@@ -719,55 +709,55 @@ Wire Wire Line
 	2900 1100 2900 1300
 Wire Wire Line
 	3000 1100 3000 1300
-Text Label 2600 1300 1    50   ~ 0
+Text Label 2800 3350 1    50   ~ 0
 row1
-Text Label 2500 1300 1    50   ~ 0
+Text Label 2700 3350 1    50   ~ 0
 row2
-Text Label 2400 1300 1    50   ~ 0
+Text Label 2600 3350 1    50   ~ 0
 row3
-Text Label 2300 1300 1    50   ~ 0
+Text Label 2500 3350 1    50   ~ 0
 row4
-Text Label 2200 1300 1    50   ~ 0
+Text Label 2400 3350 1    50   ~ 0
 row5
-Text Label 2700 1300 1    50   ~ 0
+Text Label 3550 2650 0    50   ~ 0
 col1
-Text Label 2800 1300 1    50   ~ 0
-col2
-Text Label 2900 1300 1    50   ~ 0
-col3
-Text Label 3000 1300 1    50   ~ 0
-col4
-Text Label 3550 1650 0    50   ~ 0
-col5
-Text Label 3550 1750 0    50   ~ 0
-col6
-Text Label 3550 1850 0    50   ~ 0
-col7
-Text Label 3550 1950 0    50   ~ 0
-col8
-Text Label 3550 2050 0    50   ~ 0
-col9
-Text Label 3550 2150 0    50   ~ 0
-col10
-Text Label 3550 2250 0    50   ~ 0
-col11
-Text Label 3550 2350 0    50   ~ 0
-col12
 Text Label 3550 2450 0    50   ~ 0
+col2
+Text Label 3550 2250 0    50   ~ 0
+col3
+Text Label 3550 2050 0    50   ~ 0
+col4
+Text Label 3550 1850 0    50   ~ 0
+col5
+Text Label 3550 1650 0    50   ~ 0
+col6
+Text Label 2900 1300 1    50   ~ 0
+col7
+Text Label 2800 1300 1    50   ~ 0
+col8
+Text Label 2700 1300 1    50   ~ 0
+col9
+Text Label 2600 1300 1    50   ~ 0
+col10
+Text Label 2500 1300 1    50   ~ 0
+col11
+Text Label 2400 1300 1    50   ~ 0
+col12
+Text Label 2300 1300 1    50   ~ 0
 col13
-Text Label 3550 2550 0    50   ~ 0
+Text Label 2200 1300 1    50   ~ 0
 col14
-Text Label 2600 3400 1    50   ~ 0
+Text Label 3550 2550 0    50   ~ 0
 caps_led
-Text Label 2700 3400 1    50   ~ 0
+Text Label 3550 2350 0    50   ~ 0
 led1
-Text Label 2800 3400 1    50   ~ 0
+Text Label 3550 2150 0    50   ~ 0
 led2
-Text Label 2900 3400 1    50   ~ 0
+Text Label 3550 1950 0    50   ~ 0
 led3
-Text Label 3000 3400 1    50   ~ 0
+Text Label 3550 1750 0    50   ~ 0
 led4
-Text Label 3750 2850 2    50   ~ 0
+Text Label 3000 1300 1    50   ~ 0
 led5
 Entry Wire Line
 	5050 1500 5150 1600
@@ -850,7 +840,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 3850 5150 3850
 $Comp
-L device:LED LED1
+L Device:LED LED1
 U 1 1 5A98E30A
 P 6000 4450
 F 0 "LED1" H 5992 4195 50  0000 C CNN
@@ -861,7 +851,7 @@ F 3 "" H 6000 4450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R RL1
+L Device:R RL1
 U 1 1 5A98E673
 P 5600 4450
 F 0 "RL1" V 5393 4450 50  0000 C CNN
@@ -874,7 +864,7 @@ $EndComp
 Wire Wire Line
 	5750 4450 5850 4450
 $Comp
-L device:LED LED2
+L Device:LED LED2
 U 1 1 5A9996E8
 P 6000 4800
 F 0 "LED2" H 5992 4545 50  0000 C CNN
@@ -885,7 +875,7 @@ F 3 "" H 6000 4800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R RL2
+L Device:R RL2
 U 1 1 5A9996EF
 P 5600 4800
 F 0 "RL2" V 5393 4800 50  0000 C CNN
@@ -898,7 +888,7 @@ $EndComp
 Wire Wire Line
 	5750 4800 5850 4800
 $Comp
-L device:LED LED3
+L Device:LED LED3
 U 1 1 5A99C333
 P 6000 5150
 F 0 "LED3" H 5992 4895 50  0000 C CNN
@@ -909,7 +899,7 @@ F 3 "" H 6000 5150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R RL3
+L Device:R RL3
 U 1 1 5A99C33A
 P 5600 5150
 F 0 "RL3" V 5393 5150 50  0000 C CNN
@@ -922,7 +912,7 @@ $EndComp
 Wire Wire Line
 	5750 5150 5850 5150
 $Comp
-L device:LED LED4
+L Device:LED LED4
 U 1 1 5A99F1F4
 P 6000 5500
 F 0 "LED4" H 5992 5245 50  0000 C CNN
@@ -933,7 +923,7 @@ F 3 "" H 6000 5500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R RL4
+L Device:R RL4
 U 1 1 5A99F1FB
 P 5600 5500
 F 0 "RL4" V 5393 5500 50  0000 C CNN
@@ -946,7 +936,7 @@ $EndComp
 Wire Wire Line
 	5750 5500 5850 5500
 $Comp
-L device:LED LED5
+L Device:LED LED5
 U 1 1 5A9A1FE2
 P 6000 5850
 F 0 "LED5" H 5992 5595 50  0000 C CNN
@@ -957,7 +947,7 @@ F 3 "" H 6000 5850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R RL5
+L Device:R RL5
 U 1 1 5A9A1FE9
 P 5600 5850
 F 0 "RL5" V 5393 5850 50  0000 C CNN
@@ -1075,10 +1065,8 @@ Connection ~ 6300 5850
 Wire Wire Line
 	6300 5850 6300 6150
 NoConn ~ 3550 2750
-NoConn ~ 3550 2650
-NoConn ~ 2500 3200
 $Comp
-L conn:USB_OTG J1
+L Connector_Specialized:USB_B_Mini J1
 U 1 1 5AA225CF
 P 1350 5250
 F 0 "J1" H 1405 5717 50  0000 C CNN
@@ -1102,6 +1090,18 @@ $EndComp
 NoConn ~ 1650 5450
 Text GLabel 2200 3200 3    60   Input ~ 0
 ADC1
+Text GLabel 3700 6200 2    60   Input ~ 0
+V33
+Wire Wire Line
+	2500 3200 2500 3400
+Wire Wire Line
+	2400 3400 2400 3200
+NoConn ~ 2300 3200
+Entry Wire Line
+	3850 2650 3950 2750
+Wire Wire Line
+	3550 2650 3850 2650
+NoConn ~ 2900 3200
 Wire Bus Line
 	1200 3500 3950 3500
 Wire Bus Line
