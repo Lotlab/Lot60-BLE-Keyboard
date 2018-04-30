@@ -64,17 +64,6 @@ F 3 "" H 1550 4350 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L keyboard-rescue:RT9193-RESCUE-ble4100-nrf-ble4100-nrf-rescue U4
-U 1 1 58687662
-P 10250 4850
-F 0 "U4" H 10250 4650 60  0000 C CNN
-F 1 "RT9193" H 10250 4750 60  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 10200 4850 60  0001 C CNN
-F 3 "" H 10200 4850 60  0001 C CNN
-	1    10250 4850
-	1    0    0    -1  
-$EndComp
-$Comp
 L keyboard-rescue:TP4057-RESCUE-ble4100-nrf-ble4100-nrf-rescue U3
 U 1 1 586876EF
 P 8350 4400
@@ -120,23 +109,8 @@ F 3 "" H 10450 4000 50  0000 C CNN
 $EndComp
 Text GLabel 8800 4300 2    60   Input ~ 0
 BATT
-Text GLabel 9800 4600 0    60   Input ~ 0
-BATT
 Text GLabel 10500 3700 0    60   Input ~ 0
 BATT
-$Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR016
-U 1 1 5868900A
-P 9550 5150
-F 0 "#PWR016" H 9550 4900 50  0001 C CNN
-F 1 "GND" H 9550 5000 50  0000 C CNN
-F 2 "" H 9550 5150 50  0000 C CNN
-F 3 "" H 9550 5150 50  0000 C CNN
-	1    9550 5150
-	1    0    0    -1  
-$EndComp
-Text GLabel 10700 4600 2    60   Input ~ 0
-3V3
 Text GLabel 1750 4500 2    60   Input ~ 0
 3V3
 $Comp
@@ -172,17 +146,6 @@ DIO
 Text GLabel 1750 4300 2    60   Input ~ 0
 DCLK
 $Comp
-L keyboard-rescue:C_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue C8
-U 1 1 58689C31
-P 10750 4950
-F 0 "C8" H 10760 5020 50  0000 L CNN
-F 1 "22nF" H 10760 4870 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 10750 4950 50  0001 C CNN
-F 3 "" H 10750 4950 50  0000 C CNN
-	1    10750 4950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C5
 U 1 1 58689C6E
 P 7900 5750
@@ -202,17 +165,6 @@ F 1 "1uF" H 8110 5670 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 8100 5750 50  0001 C CNN
 F 3 "" H 8100 5750 50  0000 C CNN
 	1    8100 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR018
-U 1 1 5868A007
-P 10750 5150
-F 0 "#PWR018" H 10750 4900 50  0001 C CNN
-F 1 "GND" H 10750 5000 50  0000 C CNN
-F 2 "" H 10750 5150 50  0000 C CNN
-F 3 "" H 10750 5150 50  0000 C CNN
-	1    10750 5150
 	1    0    0    -1  
 $EndComp
 Text GLabel 7900 5650 1    60   Input ~ 0
@@ -337,8 +289,6 @@ Wire Wire Line
 Wire Wire Line
 	10450 3800 10450 4000
 Wire Wire Line
-	9800 4700 9550 4700
-Wire Wire Line
 	1750 4200 1850 4200
 Wire Wire Line
 	1850 4200 1850 3950
@@ -359,13 +309,9 @@ Wire Wire Line
 	1650 2850 1550 2850
 Connection ~ 1550 2850
 Wire Wire Line
-	10700 4800 10750 4800
-Wire Wire Line
 	7850 4400 7900 4400
 Wire Wire Line
 	7650 5850 7650 5950
-Wire Wire Line
-	9550 4700 9550 5150
 Wire Wire Line
 	7650 4400 7550 4400
 Wire Wire Line
@@ -384,10 +330,6 @@ Wire Wire Line
 Wire Wire Line
 	8950 5350 8950 5300
 Connection ~ 8700 5600
-Wire Wire Line
-	10750 4800 10750 4850
-Wire Wire Line
-	10750 5050 10750 5150
 Wire Notes Line
 	7300 2700 11200 2700
 Wire Notes Line
@@ -403,8 +345,6 @@ Wire Wire Line
 Wire Wire Line
 	8000 5900 8000 5950
 Connection ~ 8000 5900
-Text GLabel 9800 4800 0    60   Input ~ 0
-BATT
 $Comp
 L keyboard-rescue:CH554T-ch554t U2
 U 1 1 5A0D8D07
@@ -1102,6 +1042,32 @@ Entry Wire Line
 Wire Wire Line
 	3550 2650 3850 2650
 NoConn ~ 2900 3200
+$Comp
+L Regulator_Linear:AP2127N-3.0 U4
+U 1 1 5AE6D677
+P 10250 4750
+F 0 "U4" H 10250 4992 50  0000 C CNN
+F 1 "XC6206P30" H 10250 4901 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10250 4975 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AP2127.pdf" H 10250 4750 50  0001 C CNN
+	1    10250 4750
+	1    0    0    -1  
+$EndComp
+Text GLabel 9950 4750 0    60   Input ~ 0
+BATT
+Text GLabel 10550 4750 2    60   Input ~ 0
+3V3
+$Comp
+L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR016
+U 1 1 5AE6D8BF
+P 10250 5050
+F 0 "#PWR016" H 10250 4800 50  0001 C CNN
+F 1 "GND" H 10250 4900 50  0000 C CNN
+F 2 "" H 10250 5050 50  0000 C CNN
+F 3 "" H 10250 5050 50  0000 C CNN
+	1    10250 5050
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	1200 3500 3950 3500
 Wire Bus Line

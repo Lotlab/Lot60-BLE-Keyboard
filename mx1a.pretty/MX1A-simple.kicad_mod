@@ -1,0 +1,22 @@
+(module MX1A-simple (layer F.Cu) (tedit 5AE6DBF2)
+  (fp_text reference S14 (at 0 8.99922) (layer F.Fab) hide
+    (effects (font (size 1.524 1.524) (thickness 0.3048)))
+  )
+  (fp_text value MX1A (at 0 -8.255) (layer F.Fab) hide
+    (effects (font (size 1.524 1.524) (thickness 0.3048)))
+  )
+  (fp_line (start -7.62 -7.62) (end 7.62 -7.62) (layer F.SilkS) (width 0.381))
+  (fp_line (start 7.62 -7.62) (end 7.62 7.62) (layer F.SilkS) (width 0.381))
+  (fp_line (start 7.62 7.62) (end -7.62 7.62) (layer F.SilkS) (width 0.381))
+  (fp_line (start -7.62 7.62) (end -7.62 -7.62) (layer F.SilkS) (width 0.381))
+  (pad 0 thru_hole circle (at 0 0) (size 4.09956 4.09956) (drill 4.09956) (layers *.Cu *.Mask F.SilkS))
+  (pad 2 thru_hole circle (at 2.54 -5.08) (size 2.60096 2.60096) (drill 1.50114) (layers *.Cu *.Mask F.SilkS))
+  (pad 1 thru_hole circle (at -3.81 -2.54) (size 2.60096 2.60096) (drill 1.50114) (layers *.Cu *.Mask F.SilkS))
+  (pad "" thru_hole circle (at -5.08 0) (size 1.69926 1.69926) (drill 1.69926) (layers *.Cu *.Mask F.SilkS))
+  (pad "" thru_hole circle (at 5.08 0) (size 1.69926 1.69926) (drill 1.69926) (layers *.Cu *.Mask F.SilkS))
+  (model cherry_mx1.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+)
