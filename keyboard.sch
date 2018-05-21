@@ -198,7 +198,7 @@ L keyboard-rescue:R_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue R2
 U 1 1 5868B912
 P 7750 4400
 F 0 "R2" H 7780 4420 50  0000 L CNN
-F 1 "1.5K" H 7780 4360 50  0000 L CNN
+F 1 "4.7K" H 7780 4360 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 7750 4400 50  0001 C CNN
 F 3 "" H 7750 4400 50  0000 C CNN
 	1    7750 4400
@@ -265,7 +265,7 @@ Text GLabel 8550 5600 0    60   Input ~ 0
 ADC1
 Text Notes 9150 6450 0    60   ~ 0
 Power
-Text GLabel 8800 4200 2    60   Input ~ 0
+Text GLabel 9100 4200 2    60   Input ~ 0
 VCC
 Text GLabel 7650 5650 1    60   Input ~ 0
 VCC
@@ -472,7 +472,7 @@ L keyboard-rescue:R_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue R1
 U 1 1 5A0DB9CC
 P 2950 6200
 F 0 "R1" H 2980 6220 50  0000 L CNN
-F 1 "20K" H 2980 6160 50  0000 L CNN
+F 1 "10K" H 2980 6160 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 2950 6200 50  0001 C CNN
 F 3 "" H 2950 6200 50  0000 C CNN
 	1    2950 6200
@@ -614,9 +614,7 @@ Wire Wire Line
 Wire Bus Line
 	1200 1000 1200 3500
 Entry Wire Line
-	2100 1000 2200 1100
-Entry Wire Line
-	2200 1000 2300 1100
+	2200 3400 2300 3500
 Entry Wire Line
 	2300 1000 2400 1100
 Entry Wire Line
@@ -631,8 +629,6 @@ Entry Wire Line
 	2800 1000 2900 1100
 Entry Wire Line
 	2900 1000 3000 1100
-Wire Wire Line
-	2200 1300 2200 1100
 Wire Wire Line
 	2300 1100 2300 1300
 Wire Wire Line
@@ -683,9 +679,9 @@ Text Label 2500 1300 1    50   ~ 0
 col11
 Text Label 2400 1300 1    50   ~ 0
 col12
-Text Label 2300 1300 1    50   ~ 0
-col13
 Text Label 2200 1300 1    50   ~ 0
+col13
+Text Label 2200 3350 1    50   ~ 0
 col14
 Text Label 3550 2550 0    50   ~ 0
 caps_led
@@ -1028,7 +1024,7 @@ F 3 "" H 1250 5650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 1650 5450
-Text GLabel 2200 3200 3    60   Input ~ 0
+Text GLabel 2300 1100 1    60   Input ~ 0
 ADC1
 Text GLabel 3700 6200 2    60   Input ~ 0
 V33
@@ -1068,6 +1064,12 @@ F 3 "" H 10250 5050 50  0000 C CNN
 	1    10250 5050
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2200 3200 2200 3400
+Wire Wire Line
+	2200 1100 2200 1300
+Entry Wire Line
+	2100 1000 2200 1100
 Wire Bus Line
 	1200 3500 3950 3500
 Wire Bus Line
@@ -1076,4 +1078,15 @@ Wire Bus Line
 	3950 1300 3950 3500
 Wire Bus Line
 	5050 1300 5050 5850
+$Comp
+L Device:D D20
+U 1 1 5AFFEAFC
+P 8950 4200
+F 0 "D20" H 8950 4416 50  0000 C CNN
+F 1 "SS14" H 8950 4325 50  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 8950 4200 50  0001 C CNN
+F 3 "~" H 8950 4200 50  0001 C CNN
+	1    8950 4200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
