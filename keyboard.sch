@@ -1251,6 +1251,8 @@ Text Label 5050 7050 0    50   ~ 0
 BUS_A
 Text GLabel 5400 6450 0    60   Input ~ 0
 3V3
+Text Notes 7750 4850 0    50   ~ 0
+I_{chrg} = 1000/R2
 Wire Bus Line
 	2100 1250 3850 1250
 Wire Bus Line
