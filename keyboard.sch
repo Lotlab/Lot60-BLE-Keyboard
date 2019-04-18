@@ -833,7 +833,7 @@ U 1 1 5C5C3892
 P 1250 5600
 F 0 "J1" H 1355 6467 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 1355 6376 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A" H 1400 5600 50  0001 C CNN
+F 2 "Customv2:USB_C_SIMPLE_ONBOARD" H 1400 5600 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1400 5600 50  0001 C CNN
 	1    1250 5600
 	1    0    0    -1  
