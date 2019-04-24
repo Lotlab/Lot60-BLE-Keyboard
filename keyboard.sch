@@ -628,37 +628,37 @@ Wire Wire Line
 $Comp
 L Device:LED_Small LED1
 U 1 1 5A98E30A
-P 6000 4450
-F 0 "LED1" H 6000 4650 50  0000 C CNN
-F 1 "LED" H 6000 4550 50  0000 C CNN
-F 2 "MX1A:MX1A-led" H 6000 4450 50  0001 C CNN
-F 3 "" H 6000 4450 50  0001 C CNN
-	1    6000 4450
+P 6000 5050
+F 0 "LED1" H 6000 5250 50  0000 C CNN
+F 1 "LED" H 6000 5150 50  0000 C CNN
+F 2 "MX1A:MX1A-led" H 6000 5050 50  0001 C CNN
+F 3 "" H 6000 5050 50  0001 C CNN
+	1    6000 5050
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED_Small LED2
 U 1 1 5A9996E8
-P 6000 4750
-F 0 "LED2" H 6000 4950 50  0000 C CNN
-F 1 "LED" H 6000 4850 50  0000 C CNN
-F 2 "MX1A:MX1A-led" H 6000 4750 50  0001 C CNN
-F 3 "" H 6000 4750 50  0001 C CNN
-	1    6000 4750
+P 6000 5350
+F 0 "LED2" H 6000 5550 50  0000 C CNN
+F 1 "LED" H 6000 5450 50  0000 C CNN
+F 2 "MX1A:MX1A-led" H 6000 5350 50  0001 C CNN
+F 3 "" H 6000 5350 50  0001 C CNN
+	1    6000 5350
 	-1   0    0    1   
 $EndComp
 Entry Wire Line
-	5050 4350 5150 4450
-Entry Wire Line
-	5050 4650 5150 4750
-Entry Wire Line
 	5050 4950 5150 5050
-Wire Wire Line
-	5150 4450 5450 4450
-Wire Wire Line
-	5450 4750 5150 4750
+Entry Wire Line
+	5050 5250 5150 5350
+Entry Wire Line
+	5050 5550 5150 5650
 Wire Wire Line
 	5150 5050 5450 5050
+Wire Wire Line
+	5450 5350 5150 5350
+Wire Wire Line
+	5150 5650 5450 5650
 Text Label 5150 1600 0    50   ~ 0
 row1
 Text Label 5150 1700 0    50   ~ 0
@@ -699,23 +699,23 @@ Text Label 5150 3600 0    50   ~ 0
 col14
 Text Label 5150 3850 0    50   ~ 0
 caps
-Text Label 5150 4450 0    50   ~ 0
-led1
-Text Label 5150 4750 0    50   ~ 0
-led2
 Text Label 5150 5050 0    50   ~ 0
+led1
+Text Label 5150 5350 0    50   ~ 0
+led2
+Text Label 5150 5650 0    50   ~ 0
 led3
 Wire Wire Line
-	6300 4450 6300 4750
+	6300 5050 6300 5350
 $Comp
 L power:GND #PWR09
 U 1 1 5A9BBAE2
-P 6300 6150
-F 0 "#PWR09" H 6300 5900 50  0001 C CNN
-F 1 "GND" H 6305 5977 50  0000 C CNN
-F 2 "" H 6300 6150 50  0001 C CNN
-F 3 "" H 6300 6150 50  0001 C CNN
-	1    6300 6150
+P 6300 6750
+F 0 "#PWR09" H 6300 6500 50  0001 C CNN
+F 1 "GND" H 6305 6577 50  0000 C CNN
+F 2 "" H 6300 6750 50  0001 C CNN
+F 3 "" H 6300 6750 50  0001 C CNN
+	1    6300 6750
 	1    0    0    -1  
 $EndComp
 Text GLabel 2150 1400 0    60   Input ~ 0
@@ -941,104 +941,100 @@ Entry Wire Line
 $Comp
 L keyboard-rescue:R_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue RL1
 U 1 1 5CAAA315
-P 5550 4450
-F 0 "RL1" H 5580 4470 50  0000 L CNN
-F 1 "300" H 5580 4410 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 5550 4450 50  0001 C CNN
-F 3 "" H 5550 4450 50  0000 C CNN
-	1    5550 4450
-	0    1    1    0   
-$EndComp
-$Comp
-L keyboard-rescue:R_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue RL2
-U 1 1 5CAE60C9
-P 5550 4750
-F 0 "RL2" H 5580 4770 50  0000 L CNN
-F 1 "300" H 5580 4710 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 5550 4750 50  0001 C CNN
-F 3 "" H 5550 4750 50  0000 C CNN
-	1    5550 4750
-	0    1    1    0   
-$EndComp
-$Comp
-L keyboard-rescue:R_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue RL3
-U 1 1 5CB19C23
 P 5550 5050
-F 0 "RL3" H 5580 5070 50  0000 L CNN
+F 0 "RL1" H 5580 5070 50  0000 L CNN
 F 1 "300" H 5580 5010 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 5550 5050 50  0001 C CNN
 F 3 "" H 5550 5050 50  0000 C CNN
 	1    5550 5050
 	0    1    1    0   
 $EndComp
+$Comp
+L keyboard-rescue:R_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue RL2
+U 1 1 5CAE60C9
+P 5550 5350
+F 0 "RL2" H 5580 5370 50  0000 L CNN
+F 1 "300" H 5580 5310 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5550 5350 50  0001 C CNN
+F 3 "" H 5550 5350 50  0000 C CNN
+	1    5550 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard-rescue:R_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue RL3
+U 1 1 5CB19C23
+P 5550 5650
+F 0 "RL3" H 5580 5670 50  0000 L CNN
+F 1 "300" H 5580 5610 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5550 5650 50  0001 C CNN
+F 3 "" H 5550 5650 50  0000 C CNN
+	1    5550 5650
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	5650 4450 5900 4450
-Wire Wire Line
-	5900 4750 5650 4750
-Wire Wire Line
-	5650 5050 5900 5050
-Wire Wire Line
-	6100 4450 6300 4450
-Wire Wire Line
-	6100 4750 6300 4750
+	5650 5650 5750 5650
 Wire Wire Line
 	6100 5050 6300 5050
+Wire Wire Line
+	6100 5350 6300 5350
+Wire Wire Line
+	6100 5650 6300 5650
 $Comp
 L Device:LED_Small LED3
 U 1 1 5A99C333
-P 6000 5050
-F 0 "LED3" H 6000 5250 50  0000 C CNN
-F 1 "LED" H 6000 5150 50  0000 C CNN
-F 2 "MX1A:MX1A-led" H 6000 5050 50  0001 C CNN
-F 3 "" H 6000 5050 50  0001 C CNN
-	1    6000 5050
+P 6000 5650
+F 0 "LED3" H 6000 5850 50  0000 C CNN
+F 1 "LED" H 6000 5750 50  0000 C CNN
+F 2 "MX1A:MX1A-led" H 6000 5650 50  0001 C CNN
+F 3 "" H 6000 5650 50  0001 C CNN
+	1    6000 5650
 	-1   0    0    1   
 $EndComp
-Connection ~ 6300 4750
+Connection ~ 6300 5350
 Wire Wire Line
-	6300 4750 6300 5050
-Connection ~ 6300 5050
+	6300 5350 6300 5650
+Connection ~ 6300 5650
 Wire Wire Line
-	6300 5050 6300 6150
+	6300 5650 6300 6750
 Wire Wire Line
-	5150 5400 5400 5400
+	5150 6000 5400 6000
 Wire Wire Line
-	5400 5500 5150 5500
+	5400 6100 5150 6100
 Wire Wire Line
-	5150 5600 5400 5600
+	5150 6200 5400 6200
 Wire Wire Line
-	5400 5700 5150 5700
+	5400 6300 5150 6300
 Wire Wire Line
-	5150 5800 5400 5800
-Text Label 5150 5400 0    50   ~ 0
+	5150 6400 5400 6400
+Text Label 5150 6000 0    50   ~ 0
 row1
-Text Label 5150 5500 0    50   ~ 0
+Text Label 5150 6100 0    50   ~ 0
 row2
-Text Label 5150 5600 0    50   ~ 0
+Text Label 5150 6200 0    50   ~ 0
 row3
-Text Label 5150 5700 0    50   ~ 0
+Text Label 5150 6300 0    50   ~ 0
 row4
-Text Label 5150 5800 0    50   ~ 0
+Text Label 5150 6400 0    50   ~ 0
 row5
 Entry Wire Line
-	5050 5300 5150 5400
+	5050 5900 5150 6000
 Entry Wire Line
-	5050 5400 5150 5500
+	5050 6000 5150 6100
 Entry Wire Line
-	5050 5500 5150 5600
+	5050 6100 5150 6200
 Entry Wire Line
-	5050 5600 5150 5700
+	5050 6200 5150 6300
 Entry Wire Line
-	5050 5700 5150 5800
+	5050 6300 5150 6400
 $Comp
 L Connector:Conn_01x05_Female J2
 U 1 1 5CC7CF58
-P 5600 5600
-F 0 "J2" H 5628 5626 50  0000 L CNN
-F 1 "-" H 5628 5535 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 5600 5600 50  0001 C CNN
-F 3 "~" H 5600 5600 50  0001 C CNN
-	1    5600 5600
+P 5600 6200
+F 0 "J2" H 5628 6226 50  0000 L CNN
+F 1 "-" H 5628 6135 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 5600 6200 50  0001 C CNN
+F 3 "~" H 5600 6200 50  0001 C CNN
+	1    5600 6200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1148,64 +1144,64 @@ Entry Wire Line
 Entry Wire Line
 	2800 3050 2900 3150
 Entry Wire Line
-	5050 6050 5150 6150
-Wire Wire Line
-	5150 6150 5400 6150
-Text Label 5150 6150 0    50   ~ 0
-GPIO2
-$Comp
-L Jumper:SolderJumper_2_Bridged JP1
-U 1 1 5D27A02A
-P 5550 6150
-F 0 "JP1" H 5550 6350 50  0000 C CNN
-F 1 "Jumper" H 5550 6250 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm" H 5550 6150 50  0001 C CNN
-F 3 "~" H 5550 6150 50  0001 C CNN
-	1    5550 6150
-	-1   0    0    1   
-$EndComp
-Text GLabel 5700 6150 2    50   Input ~ 0
-MOSI
-Text GLabel 3450 2400 2    50   Input ~ 0
-MISO
-Entry Wire Line
-	5050 6450 5150 6550
-Entry Wire Line
-	5050 6550 5150 6650
-Entry Wire Line
 	5050 6650 5150 6750
-Wire Wire Line
-	5150 6550 5400 6550
-Wire Wire Line
-	5150 6650 5400 6650
 Wire Wire Line
 	5150 6750 5400 6750
 Text Label 5150 6750 0    50   ~ 0
 GPIO2
-Text Label 5150 6650 0    50   ~ 0
+$Comp
+L Jumper:SolderJumper_2_Bridged JP1
+U 1 1 5D27A02A
+P 5550 6750
+F 0 "JP1" H 5550 6950 50  0000 C CNN
+F 1 "Jumper" H 5550 6850 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm" H 5550 6750 50  0001 C CNN
+F 3 "~" H 5550 6750 50  0001 C CNN
+	1    5550 6750
+	-1   0    0    1   
+$EndComp
+Text GLabel 5700 6750 2    50   Input ~ 0
+MOSI
+Text GLabel 3450 2400 2    50   Input ~ 0
+MISO
+Entry Wire Line
+	5050 7050 5150 7150
+Entry Wire Line
+	5050 7150 5150 7250
+Entry Wire Line
+	5050 7250 5150 7350
+Wire Wire Line
+	5150 7150 5400 7150
+Wire Wire Line
+	5150 7250 5400 7250
+Wire Wire Line
+	5150 7350 5400 7350
+Text Label 5150 7350 0    50   ~ 0
+GPIO2
+Text Label 5150 7250 0    50   ~ 0
 GPIO1
-Text Label 5150 6550 0    50   ~ 0
+Text Label 5150 7150 0    50   ~ 0
 GPIO0
 $Comp
 L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR021
 U 1 1 5D497C40
-P 5400 6850
-F 0 "#PWR021" H 5400 6600 50  0001 C CNN
-F 1 "GND" H 5400 6700 50  0000 C CNN
-F 2 "" H 5400 6850 50  0001 C CNN
-F 3 "" H 5400 6850 50  0001 C CNN
-	1    5400 6850
+P 5400 7450
+F 0 "#PWR021" H 5400 7200 50  0001 C CNN
+F 1 "GND" H 5400 7300 50  0000 C CNN
+F 2 "" H 5400 7450 50  0001 C CNN
+F 3 "" H 5400 7450 50  0001 C CNN
+	1    5400 7450
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector:Conn_01x05_Female J3
 U 1 1 5D4CBE54
-P 5600 6650
-F 0 "J3" H 5628 6676 50  0000 L CNN
-F 1 "-" H 5628 6585 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 5600 6650 50  0001 C CNN
-F 3 "~" H 5600 6650 50  0001 C CNN
-	1    5600 6650
+P 5600 7250
+F 0 "J3" H 5628 7276 50  0000 L CNN
+F 1 "-" H 5628 7185 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 5600 7250 50  0001 C CNN
+F 3 "~" H 5600 7250 50  0001 C CNN
+	1    5600 7250
 	1    0    0    -1  
 $EndComp
 Text GLabel 3500 4450 1    50   Input ~ 0
@@ -1220,9 +1216,9 @@ Text GLabel 3000 4450 1    50   Input ~ 0
 CLK
 Wire Bus Line
 	3850 1250 5050 1250
-Text Label 5050 7050 0    50   ~ 0
+Text Label 5050 7650 0    50   ~ 0
 BUS_A
-Text GLabel 5400 6450 0    60   Input ~ 0
+Text GLabel 5400 7050 0    60   Input ~ 0
 3V3
 Text Notes 7750 4850 0    50   ~ 0
 I_{chrg} = 1000/R2
@@ -1299,4 +1295,42 @@ F 3 "" H 10300 4000 50  0000 C CNN
 	1    10300 4000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:LED_RABG D25
+U 1 1 5CE18492
+P 6100 4600
+F 0 "D25" V 6054 4960 50  0000 L CNN
+F 1 "LED_CRGB" V 6145 4960 50  0000 L CNN
+F 2 "LED_SMD:LED_RGB_1210" H 6100 4550 50  0001 C CNN
+F 3 "~" H 6100 4550 50  0001 C CNN
+	1    6100 4600
+	1    0    0    -1  
+$EndComp
+Text GLabel 6300 4600 2    60   Input ~ 0
+3V3
+Wire Wire Line
+	5650 5050 5850 5050
+Wire Wire Line
+	5900 4800 5850 4800
+Wire Wire Line
+	5850 4800 5850 5050
+Connection ~ 5850 5050
+Wire Wire Line
+	5850 5050 5900 5050
+Wire Wire Line
+	5650 5350 5800 5350
+Wire Wire Line
+	5900 4600 5800 4600
+Wire Wire Line
+	5800 4600 5800 5350
+Connection ~ 5800 5350
+Wire Wire Line
+	5800 5350 5900 5350
+Wire Wire Line
+	5900 4400 5750 4400
+Wire Wire Line
+	5750 4400 5750 5650
+Connection ~ 5750 5650
+Wire Wire Line
+	5750 5650 5900 5650
 $EndSCHEMATC
