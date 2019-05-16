@@ -1,4 +1,4 @@
-EESchema Schematic File Version 5
+EESchema Schematic File Version 4
 LIBS:keyboard-cache
 EELAYER 29 0
 EELAYER END
@@ -14,7 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-BusAlias BUS_A row1 row2 row3 row4 row5 col1 col2 col3 col4 col5 col6 col7 col8 col9 col10 col11 col12 col13 col14 caps led1 led2 led3 CLK MISO GPIO0 GPIO1 GPIO2
 $Sheet
 S 5400 1450 800  2550
 U 4F60E920
@@ -42,29 +41,29 @@ F20 "col14" T L 5400 3600 60
 F21 "CAPS_LED" T L 5400 3850 60 
 $EndSheet
 $Comp
-L keyboard-rescue:CONN_01X02-RESCUE-ble4100-nrf-ble4100-nrf-rescue P2
+L Connector_Generic:Conn_01x02 P2
 U 1 1 5867EF56
-P 10700 3750
-F 0 "P2" H 10700 3900 50  0000 C CNN
-F 1 "BATT" V 10800 3750 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10700 3750 50  0001 C CNN
-F 3 "" H 10700 3750 50  0000 C CNN
-	1    10700 3750
+P 10700 3700
+F 0 "P2" H 10700 3850 50  0000 C CNN
+F 1 "BATT" V 10800 3700 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10700 3700 50  0001 C CNN
+F 3 "" H 10700 3700 50  0000 C CNN
+	1    10700 3700
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:CONN_01X04-RESCUE-ble4100-nrf-ble4100-nrf-rescue P1
+L Connector_Generic:Conn_01x04 P1
 U 1 1 586858FB
-P 1300 4350
-F 0 "P1" H 1300 4600 50  0000 C CNN
-F 1 "SWD" V 1400 4350 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 1300 4350 50  0001 C CNN
-F 3 "" H 1300 4350 50  0000 C CNN
-	1    1300 4350
+P 1300 4400
+F 0 "P1" H 1300 4650 50  0000 C CNN
+F 1 "SWD" V 1400 4400 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 1300 4400 50  0001 C CNN
+F 3 "" H 1300 4400 50  0000 C CNN
+	1    1300 4400
 	-1   0    0    1   
 $EndComp
 $Comp
-L keyboard-rescue:TP4057-RESCUE-ble4100-nrf-ble4100-nrf-rescue U3
+L custom:TP4057 U3
 U 1 1 586876EF
 P 8350 4400
 F 0 "U3" H 8350 4150 60  0000 C CNN
@@ -75,7 +74,7 @@ F 3 "" H 8350 4350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR011
+L power:GND #PWR011
 U 1 1 58688AE8
 P 7550 5950
 F 0 "#PWR011" H 7550 5700 50  0001 C CNN
@@ -86,7 +85,7 @@ F 3 "" H 7550 5950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR014
+L power:GND #PWR014
 U 1 1 58688B0A
 P 8850 4550
 F 0 "#PWR014" H 8850 4300 50  0001 C CNN
@@ -97,7 +96,7 @@ F 3 "" H 8850 4550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR017
+L power:GND #PWR017
 U 1 1 58688C41
 P 10450 4000
 F 0 "#PWR017" H 10450 3750 50  0001 C CNN
@@ -114,7 +113,7 @@ BATT
 Text GLabel 1500 4500 2    60   Input ~ 0
 3V3
 $Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR05
+L power:GND #PWR05
 U 1 1 5868927D
 P 1600 3950
 F 0 "#PWR05" H 1600 3700 50  0001 C CNN
@@ -135,7 +134,7 @@ P 9000 4450
 F 0 "C5" H 9010 4520 50  0000 L CNN
 F 1 "1uF" H 9010 4370 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 9000 4450 50  0001 C CNN
-F 3 "" H 9000 4450 50  0000 C CNN
+F 3 "~" H 9000 4450 50  0000 C CNN
 	1    9000 4450
 	1    0    0    -1  
 $EndComp
@@ -146,7 +145,7 @@ P 10500 4950
 F 0 "C6" H 10510 5020 50  0000 L CNN
 F 1 "1uF" H 10510 4870 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 10500 4950 50  0001 C CNN
-F 3 "" H 10500 4950 50  0000 C CNN
+F 3 "~" H 10500 4950 50  0000 C CNN
 	1    10500 4950
 	1    0    0    -1  
 $EndComp
@@ -157,7 +156,7 @@ P 7650 5750
 F 0 "C4" H 7660 5820 50  0000 L CNN
 F 1 "0.1uF" H 7660 5670 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 7650 5750 50  0001 C CNN
-F 3 "" H 7650 5750 50  0000 C CNN
+F 3 "~" H 7650 5750 50  0000 C CNN
 	1    7650 5750
 	1    0    0    -1  
 $EndComp
@@ -173,7 +172,7 @@ F 3 "" H 7750 4400 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR010
+L power:GND #PWR010
 U 1 1 5868BA20
 P 7550 4600
 F 0 "#PWR010" H 7550 4350 50  0001 C CNN
@@ -212,12 +211,12 @@ P 8700 5750
 F 0 "C7" H 8710 5820 50  0000 L CNN
 F 1 "10nF" H 8710 5670 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 8700 5750 50  0001 C CNN
-F 3 "" H 8700 5750 50  0000 C CNN
+F 3 "~" H 8700 5750 50  0000 C CNN
 	1    8700 5750
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR015
+L power:GND #PWR015
 U 1 1 58699095
 P 8950 5950
 F 0 "#PWR015" H 8950 5700 50  0001 C CNN
@@ -238,7 +237,7 @@ VCC
 Text GLabel 7550 5550 1    60   Input ~ 0
 VCC
 $Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR013
+L power:GND #PWR013
 U 1 1 586A935F
 P 8700 5950
 F 0 "#PWR013" H 8700 5700 50  0001 C CNN
@@ -304,7 +303,7 @@ P 3800 4500
 F 0 "C1" H 3810 4570 50  0000 L CNN
 F 1 "0.1uF" H 3810 4420 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 3800 4500 50  0001 C CNN
-F 3 "" H 3800 4500 50  0000 C CNN
+F 3 "~" H 3800 4500 50  0000 C CNN
 	1    3800 4500
 	1    0    0    -1  
 $EndComp
@@ -315,7 +314,7 @@ P 4100 4500
 F 0 "C2" H 4110 4570 50  0000 L CNN
 F 1 "0.1uF" H 4110 4420 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4100 4500 50  0001 C CNN
-F 3 "" H 4100 4500 50  0000 C CNN
+F 3 "~" H 4100 4500 50  0000 C CNN
 	1    4100 4500
 	1    0    0    -1  
 $EndComp
@@ -324,7 +323,7 @@ V33
 Text GLabel 4400 5150 2    60   Input ~ 0
 VCC
 $Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR08
+L power:GND #PWR08
 U 1 1 5A0D93BB
 P 4650 5350
 F 0 "#PWR08" H 4650 5100 50  0001 C CNN
@@ -343,7 +342,7 @@ V33
 Text GLabel 4100 4400 1    60   Input ~ 0
 VCC
 $Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR04
+L power:GND #PWR04
 U 1 1 5A0D955E
 P 3800 4600
 F 0 "#PWR04" H 3800 4350 50  0001 C CNN
@@ -354,7 +353,7 @@ F 3 "" H 3800 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR06
+L power:GND #PWR06
 U 1 1 5A0D95AE
 P 4100 4600
 F 0 "#PWR06" H 4100 4350 50  0001 C CNN
@@ -400,7 +399,7 @@ P 3650 6350
 F 0 "C3" H 3660 6420 50  0000 L CNN
 F 1 "NC/47pF" H 3660 6270 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 3650 6350 50  0001 C CNN
-F 3 "" H 3650 6350 50  0000 C CNN
+F 3 "~" H 3650 6350 50  0000 C CNN
 	1    3650 6350
 	1    0    0    -1  
 $EndComp
@@ -414,7 +413,7 @@ Wire Wire Line
 	3650 6250 3650 6200
 Connection ~ 3650 6200
 $Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR07
+L power:GND #PWR07
 U 1 1 5A0DBD78
 P 3650 6450
 F 0 "#PWR07" H 3650 6200 50  0001 C CNN
@@ -425,18 +424,18 @@ F 3 "" H 3650 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:Jumper_NO_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue K1
+L Switch:SW_Push K1
 U 1 1 5A0DBDB3
-P 4150 6200
-F 0 "K1" H 4150 6280 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 4160 6140 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 4150 6200 50  0001 C CNN
-F 3 "" H 4150 6200 50  0001 C CNN
-	1    4150 6200
+P 4250 6200
+F 0 "K1" H 4250 6280 50  0000 C CNN
+F 1 "SW" H 4260 6140 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4250 6200 50  0001 C CNN
+F 3 "" H 4250 6200 50  0001 C CNN
+	1    4250 6200
 	1    0    0    -1  
 $EndComp
-Text Notes 1850 6850 0    60   ~ 0
-Key to start download, place near to UDP line.
+Text Notes 3850 6750 0    60   ~ 0
+K1 start download,\nplace near to UDP line.
 Wire Wire Line
 	8950 5600 8950 5650
 Wire Wire Line
@@ -626,24 +625,24 @@ Wire Wire Line
 Wire Wire Line
 	5400 3850 5150 3850
 $Comp
-L Device:LED_Small LED1
+L Device:LED_Small D101
 U 1 1 5A98E30A
 P 6000 5050
-F 0 "LED1" H 6000 5250 50  0000 C CNN
+F 0 "D101" H 6000 5250 50  0000 C CNN
 F 1 "LED" H 6000 5150 50  0000 C CNN
 F 2 "MX1A:MX1A-led" H 6000 5050 50  0001 C CNN
-F 3 "" H 6000 5050 50  0001 C CNN
+F 3 "~" H 6000 5050 50  0001 C CNN
 	1    6000 5050
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:LED_Small LED2
+L Device:LED_Small D102
 U 1 1 5A9996E8
 P 6000 5350
-F 0 "LED2" H 6000 5550 50  0000 C CNN
+F 0 "D102" H 6000 5550 50  0000 C CNN
 F 1 "LED" H 6000 5450 50  0000 C CNN
 F 2 "MX1A:MX1A-led" H 6000 5350 50  0001 C CNN
-F 3 "" H 6000 5350 50  0001 C CNN
+F 3 "~" H 6000 5350 50  0001 C CNN
 	1    6000 5350
 	-1   0    0    1   
 $EndComp
@@ -720,7 +719,7 @@ F 3 "" H 6300 6750 50  0001 C CNN
 $EndComp
 Text GLabel 2150 1400 0    60   Input ~ 0
 ADC1
-Text GLabel 4250 6200 2    60   Input ~ 0
+Text GLabel 4450 6200 2    60   Input ~ 0
 V33
 Wire Wire Line
 	2400 2850 2400 3050
@@ -746,7 +745,7 @@ BATT
 Text GLabel 10600 4750 2    60   Input ~ 0
 3V3
 $Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR016
+L power:GND #PWR016
 U 1 1 5AE6D8BF
 P 10100 5050
 F 0 "#PWR016" H 10100 4800 50  0001 C CNN
@@ -772,7 +771,7 @@ $EndComp
 Text GLabel 1850 5000 2    60   Input ~ 0
 VCC
 $Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR01
+L power:GND #PWR01
 U 1 1 5C5C3E63
 P 950 6500
 F 0 "#PWR01" H 950 6250 50  0001 C CNN
@@ -783,7 +782,7 @@ F 3 "" H 950 6500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR02
+L power:GND #PWR02
 U 1 1 5C5C3EAC
 P 1250 6500
 F 0 "#PWR02" H 1250 6250 50  0001 C CNN
@@ -802,7 +801,7 @@ UD_P
 Text GLabel 1850 5800 2    60   Input ~ 0
 UD_P
 $Comp
-L keyboard-rescue:USB_C_Receptacle_USB2.0-Connector J1
+L Connector:USB_C_Receptacle_USB2.0 J1
 U 1 1 5C5C3892
 P 1250 5600
 F 0 "J1" H 1355 6467 50  0000 C CNN
@@ -841,7 +840,7 @@ Wire Wire Line
 Wire Wire Line
 	2400 5300 2400 5450
 $Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR018
+L power:GND #PWR018
 U 1 1 5C5E3D2B
 P 2400 5650
 F 0 "#PWR018" H 2400 5400 50  0001 C CNN
@@ -852,7 +851,7 @@ F 3 "" H 2400 5650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR020
+L power:GND #PWR020
 U 1 1 5C5E3D78
 P 2650 5650
 F 0 "#PWR020" H 2650 5400 50  0001 C CNN
@@ -910,7 +909,7 @@ P 7450 5750
 F 0 "C8" H 7460 5820 50  0000 L CNN
 F 1 "10uF" H 7460 5670 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 7450 5750 50  0001 C CNN
-F 3 "" H 7450 5750 50  0000 C CNN
+F 3 "~" H 7450 5750 50  0000 C CNN
 	1    7450 5750
 	1    0    0    -1  
 $EndComp
@@ -939,10 +938,10 @@ Wire Wire Line
 Entry Wire Line
 	3100 3050 3200 3150
 $Comp
-L keyboard-rescue:R_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue RL1
+L keyboard-rescue:R_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue R101
 U 1 1 5CAAA315
 P 5550 5050
-F 0 "RL1" H 5580 5070 50  0000 L CNN
+F 0 "R101" H 5580 5070 50  0000 L CNN
 F 1 "300" H 5580 5010 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 5550 5050 50  0001 C CNN
 F 3 "" H 5550 5050 50  0000 C CNN
@@ -950,10 +949,10 @@ F 3 "" H 5550 5050 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L keyboard-rescue:R_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue RL2
+L keyboard-rescue:R_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue R102
 U 1 1 5CAE60C9
 P 5550 5350
-F 0 "RL2" H 5580 5370 50  0000 L CNN
+F 0 "R102" H 5580 5370 50  0000 L CNN
 F 1 "300" H 5580 5310 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 5550 5350 50  0001 C CNN
 F 3 "" H 5550 5350 50  0000 C CNN
@@ -961,10 +960,10 @@ F 3 "" H 5550 5350 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L keyboard-rescue:R_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue RL3
+L keyboard-rescue:R_Small-RESCUE-ble4100-nrf-ble4100-nrf-rescue R103
 U 1 1 5CB19C23
 P 5550 5650
-F 0 "RL3" H 5580 5670 50  0000 L CNN
+F 0 "R103" H 5580 5670 50  0000 L CNN
 F 1 "300" H 5580 5610 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 5550 5650 50  0001 C CNN
 F 3 "" H 5550 5650 50  0000 C CNN
@@ -980,13 +979,13 @@ Wire Wire Line
 Wire Wire Line
 	6100 5650 6300 5650
 $Comp
-L Device:LED_Small LED3
+L Device:LED_Small D103
 U 1 1 5A99C333
 P 6000 5650
-F 0 "LED3" H 6000 5850 50  0000 C CNN
+F 0 "D103" H 6000 5850 50  0000 C CNN
 F 1 "LED" H 6000 5750 50  0000 C CNN
 F 2 "MX1A:MX1A-led" H 6000 5650 50  0001 C CNN
-F 3 "" H 6000 5650 50  0001 C CNN
+F 3 "~" H 6000 5650 50  0001 C CNN
 	1    6000 5650
 	-1   0    0    1   
 $EndComp
@@ -1067,7 +1066,7 @@ F 3 "" H 2650 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR03
+L power:GND #PWR03
 U 1 1 58689802
 P 1800 2500
 F 0 "#PWR03" H 1800 2250 50  0001 C CNN
@@ -1183,7 +1182,7 @@ GPIO1
 Text Label 5150 7150 0    50   ~ 0
 GPIO0
 $Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR021
+L power:GND #PWR021
 U 1 1 5D497C40
 P 5400 7450
 F 0 "#PWR021" H 5400 7200 50  0001 C CNN
@@ -1223,7 +1222,7 @@ Text GLabel 5400 7050 0    60   Input ~ 0
 Text Notes 7750 4850 0    50   ~ 0
 I_{chrg} = 1000/R2
 $Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR023
+L power:GND #PWR023
 U 1 1 5CC46D5E
 P 10500 5050
 F 0 "#PWR023" H 10500 4800 50  0001 C CNN
@@ -1240,14 +1239,6 @@ Wire Wire Line
 Connection ~ 10500 4750
 Wire Wire Line
 	10500 4750 10600 4750
-Wire Bus Line
-	5050 1250 5050 1500
-Wire Bus Line
-	3850 1250 3850 1900
-Wire Bus Line
-	2200 3150 2300 3150
-Wire Bus Line
-	2100 1250 2200 1250
 Wire Wire Line
 	8800 4300 9000 4300
 Wire Wire Line
@@ -1256,7 +1247,7 @@ Connection ~ 9000 4300
 Wire Wire Line
 	9000 4300 9100 4300
 $Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR022
+L power:GND #PWR022
 U 1 1 5CCD94C3
 P 9000 4550
 F 0 "#PWR022" H 9000 4300 50  0001 C CNN
@@ -1275,7 +1266,7 @@ P 10300 3900
 F 0 "C9" H 10310 3970 50  0000 L CNN
 F 1 "1uF" H 10310 3820 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 10300 3900 50  0001 C CNN
-F 3 "" H 10300 3900 50  0000 C CNN
+F 3 "~" H 10300 3900 50  0000 C CNN
 	1    10300 3900
 	1    0    0    -1  
 $EndComp
@@ -1285,7 +1276,7 @@ Connection ~ 10300 3700
 Wire Wire Line
 	10300 3700 10200 3700
 $Comp
-L keyboard-rescue:GND-RESCUE-ble4100-nrf-ble4100-nrf-rescue #PWR012
+L power:GND #PWR012
 U 1 1 5CD4AD12
 P 10300 4000
 F 0 "#PWR012" H 10300 3750 50  0001 C CNN
@@ -1296,10 +1287,10 @@ F 3 "" H 10300 4000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED_RABG D25
+L Device:LED_RABG D104
 U 1 1 5CE18492
 P 6100 4600
-F 0 "D25" V 6054 4960 50  0000 L CNN
+F 0 "D104" V 6054 4960 50  0000 L CNN
 F 1 "LED_CRGB" V 6145 4960 50  0000 L CNN
 F 2 "LED_SMD:LED_RGB_1210" H 6100 4550 50  0001 C CNN
 F 3 "~" H 6100 4550 50  0001 C CNN
@@ -1333,4 +1324,15 @@ Wire Wire Line
 Connection ~ 5750 5650
 Wire Wire Line
 	5750 5650 5900 5650
+Text Notes 6350 4900 0    50   ~ 10
+Please check your \nLED pinset carefully.
+Connection ~ 3850 1250
+Wire Bus Line
+	2100 1250 3850 1250
+Wire Bus Line
+	3850 1250 3850 3150
+Wire Bus Line
+	2200 3150 3850 3150
+Wire Bus Line
+	5050 1250 5050 7650
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-EESchema Schematic File Version 5
+EESchema Schematic File Version 4
 LIBS:keyboard-cache
 EELAYER 29 0
 EELAYER END
@@ -878,10 +878,10 @@ F 3 "" H 3300 5450 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L keyboard-rescue:LED-device1 DC1
+L device1:LED D100
 U 1 1 5042BB59
 P 14550 3700
-F 0 "DC1" H 14550 3800 50  0000 C CNN
+F 0 "D100" H 14550 3800 50  0000 C CNN
 F 1 "LED" H 14550 3600 50  0000 C CNN
 F 2 "MX1A:MX1A-led" H 14550 3700 60  0001 C CNN
 F 3 "" H 14550 3700 60  0001 C CNN
@@ -889,10 +889,10 @@ F 3 "" H 14550 3700 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L keyboard-rescue:LED-device1 DC2
+L device1:LED D1001
 U 1 1 5042BEB0
 P 14850 3700
-F 0 "DC2" H 14850 3800 50  0000 C CNN
+F 0 "D1001" H 14850 3800 50  0000 C CNN
 F 1 "LED" H 14850 3600 50  0000 C CNN
 F 2 "MX1A:MX1A-led" H 14850 3700 60  0001 C CNN
 F 3 "" H 14850 3700 60  0001 C CNN
@@ -938,10 +938,10 @@ col13
 Text HLabel 12700 1400 1    60   3State ~ 0
 col14
 $Comp
-L keyboard-rescue:R-device1 RL0
+L device1:R R100
 U 1 1 5043A0D0
 P 14550 3000
-F 0 "RL0" V 14630 3000 50  0000 C CNN
+F 0 "R100" V 14630 3000 50  0000 C CNN
 F 1 "300" V 14550 3000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 14550 3000 60  0001 C CNN
 F 3 "" H 14550 3000 60  0001 C CNN
@@ -995,7 +995,7 @@ F 3 "" H 12450 7650 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D6
+L device1:DIODE D6
 U 1 1 506B1C22
 P 4050 3350
 F 0 "D6" H 3900 3300 40  0000 C CNN
@@ -1010,7 +1010,7 @@ F 7 "1N4148-0805" H 3500 3350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D11
+L device1:DIODE D11
 U 1 1 506B1C2B
 P 4750 3350
 F 0 "D11" H 4600 3300 40  0000 C CNN
@@ -1025,7 +1025,7 @@ F 7 "1N4148-0805" H 3650 3350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D2
+L device1:DIODE D2
 U 1 1 506B1C34
 P 3350 4550
 F 0 "D2" H 3200 4500 40  0000 C CNN
@@ -1040,7 +1040,7 @@ F 7 "1N4148-0805" H 3350 3950 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D4
+L device1:DIODE D4
 U 1 1 506B1C3D
 P 3350 7350
 F 0 "D4" H 3200 7300 40  0000 C CNN
@@ -1055,7 +1055,7 @@ F 7 "1N4148-0805" H 3350 4750 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D7
+L device1:DIODE D7
 U 1 1 506B1C46
 P 4050 4550
 F 0 "D7" H 3900 4500 40  0000 C CNN
@@ -1070,7 +1070,7 @@ F 7 "1N4148-0805" H 3500 3950 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D8
+L device1:DIODE D8
 U 1 1 506B1C4F
 P 4050 5550
 F 0 "D8" H 3900 5500 40  0000 C CNN
@@ -1085,7 +1085,7 @@ F 7 "1N4148-0805" H 3500 4350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D12
+L device1:DIODE D12
 U 1 1 506B4278
 P 4750 4550
 F 0 "D12" H 4600 4500 40  0000 C CNN
@@ -1100,7 +1100,7 @@ F 7 "1N4148-0805" H 3650 3950 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D13
+L device1:DIODE D13
 U 1 1 506B4281
 P 4750 5550
 F 0 "D13" H 4600 5500 40  0000 C CNN
@@ -1115,7 +1115,7 @@ F 7 "1N4148-0805" H 3650 4350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D9
+L device1:DIODE D9
 U 1 1 506B428A
 P 4050 7050
 F 0 "D9" H 3900 7000 40  0000 C CNN
@@ -1130,7 +1130,7 @@ F 7 "1N4148-0805" H 3500 4750 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D14
+L device1:DIODE D14
 U 1 1 506B4293
 P 4750 7050
 F 0 "D14" H 4600 7000 40  0000 C CNN
@@ -1145,7 +1145,7 @@ F 7 "1N4148-0805" H 3650 4750 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D26
+L device1:DIODE D26
 U 1 1 506B42A5
 P 6850 3350
 F 0 "D26" H 6700 3300 40  0000 C CNN
@@ -1160,7 +1160,7 @@ F 7 "1N4148-0805" H 4100 3350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D27
+L device1:DIODE D27
 U 1 1 506B42AE
 P 6850 4550
 F 0 "D27" H 6700 4500 40  0000 C CNN
@@ -1175,7 +1175,7 @@ F 7 "1N4148-0805" H 4100 3950 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D28
+L device1:DIODE D28
 U 1 1 506B42B7
 P 6850 5550
 F 0 "D28" H 6700 5500 40  0000 C CNN
@@ -1190,7 +1190,7 @@ F 7 "1N4148-0805" H 4100 4350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D29
+L device1:DIODE D29
 U 1 1 506B42C0
 P 6850 7050
 F 0 "D29" H 6700 7000 40  0000 C CNN
@@ -1216,7 +1216,7 @@ F 3 "" H 5450 7050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D16
+L device1:DIODE D16
 U 1 1 506B438B
 P 5450 3350
 F 0 "D16" H 5300 3300 40  0000 C CNN
@@ -1231,7 +1231,7 @@ F 7 "1N4148-0805" H 3800 3350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D17
+L device1:DIODE D17
 U 1 1 506B4394
 P 5450 4550
 F 0 "D17" H 5300 4500 40  0000 C CNN
@@ -1246,7 +1246,7 @@ F 7 "1N4148-0805" H 3800 3950 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D18
+L device1:DIODE D18
 U 1 1 506B439D
 P 5450 5550
 F 0 "D18" H 5300 5500 40  0000 C CNN
@@ -1261,7 +1261,7 @@ F 7 "1N4148-0805" H 3800 4350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D19
+L device1:DIODE D19
 U 1 1 506B43A6
 P 5450 7050
 F 0 "D19" H 5300 7000 40  0000 C CNN
@@ -1276,7 +1276,7 @@ F 7 "1N4148-0805" H 3800 4750 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D21
+L device1:DIODE D21
 U 1 1 506B5911
 P 6150 3350
 F 0 "D21" H 6000 3300 40  0000 C CNN
@@ -1291,7 +1291,7 @@ F 7 "1N4148-0805" H 3950 3350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D31
+L device1:DIODE D31
 U 1 1 506B591A
 P 7550 3350
 F 0 "D31" H 7400 3300 40  0000 C CNN
@@ -1306,7 +1306,7 @@ F 7 "1N4148-0805" H 4250 3350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D1
+L device1:DIODE D1
 U 1 1 506B5923
 P 3350 3350
 F 0 "D1" H 3200 3300 40  0000 C CNN
@@ -1321,7 +1321,7 @@ F 7 "1N4148-0805" H 3350 3350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D23
+L device1:DIODE D23
 U 1 1 506B592C
 P 6150 5550
 F 0 "D23" H 6000 5500 40  0000 C CNN
@@ -1336,7 +1336,7 @@ F 7 "1N4148-0805" H 3950 4350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D33
+L device1:DIODE D33
 U 1 1 506B5935
 P 7550 5550
 F 0 "D33" H 7400 5500 40  0000 C CNN
@@ -1351,7 +1351,7 @@ F 7 "1N4148-0805" H 4250 4350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D32
+L device1:DIODE D32
 U 1 1 506B593E
 P 7550 4550
 F 0 "D32" H 7400 4500 40  0000 C CNN
@@ -1366,7 +1366,7 @@ F 7 "1N4148-0805" H 4250 3950 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D36
+L device1:DIODE D36
 U 1 1 506B5947
 P 8250 3350
 F 0 "D36" H 8100 3300 40  0000 C CNN
@@ -1381,7 +1381,7 @@ F 7 "1N4148-0805" H 4400 3350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D41
+L device1:DIODE D41
 U 1 1 506B5950
 P 8950 3350
 F 0 "D41" H 8800 3300 40  0000 C CNN
@@ -1396,7 +1396,7 @@ F 7 "1N4148-0805" H 4550 3350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D37
+L device1:DIODE D37
 U 1 1 506B5959
 P 8250 4550
 F 0 "D37" H 8100 4500 40  0000 C CNN
@@ -1411,7 +1411,7 @@ F 7 "1N4148-0805" H 4400 3950 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D38
+L device1:DIODE D38
 U 1 1 506B5962
 P 8250 5550
 F 0 "D38" H 8100 5500 40  0000 C CNN
@@ -1426,7 +1426,7 @@ F 7 "1N4148-0805" H 4400 4350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D22
+L device1:DIODE D22
 U 1 1 506B596B
 P 6150 4550
 F 0 "D22" H 6000 4500 40  0000 C CNN
@@ -1441,7 +1441,7 @@ F 7 "1N4148-0805" H 3950 3950 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D43
+L device1:DIODE D43
 U 1 1 506B5974
 P 8950 5550
 F 0 "D43" H 8800 5500 40  0000 C CNN
@@ -1456,7 +1456,7 @@ F 7 "1N4148-0805" H 4550 4350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D42
+L device1:DIODE D42
 U 1 1 506B597D
 P 8950 4550
 F 0 "D42" H 8800 4500 40  0000 C CNN
@@ -1471,7 +1471,7 @@ F 7 "1N4148-0805" H 4550 3950 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D46
+L device1:DIODE D46
 U 1 1 506B5986
 P 9650 3350
 F 0 "D46" H 9500 3300 40  0000 C CNN
@@ -1486,7 +1486,7 @@ F 7 "1N4148-0805" H 4700 3350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D47
+L device1:DIODE D47
 U 1 1 506B598F
 P 9650 4550
 F 0 "D47" H 9500 4500 40  0000 C CNN
@@ -1501,7 +1501,7 @@ F 7 "1N4148-0805" H 4700 3950 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D51
+L device1:DIODE D51
 U 1 1 506B5998
 P 10350 3350
 F 0 "D51" H 10200 3300 40  0000 C CNN
@@ -1516,7 +1516,7 @@ F 7 "1N4148-0805" H 4850 3350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D52
+L device1:DIODE D52
 U 1 1 506B59A1
 P 10350 4550
 F 0 "D52" H 10200 4500 40  0000 C CNN
@@ -1531,7 +1531,7 @@ F 7 "1N4148-0805" H 4850 3950 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D48
+L device1:DIODE D48
 U 1 1 506B59AA
 P 9650 5550
 F 0 "D48" H 9500 5500 40  0000 C CNN
@@ -1546,7 +1546,7 @@ F 7 "1N4148-0805" H 4700 4350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D44
+L device1:DIODE D44
 U 1 1 506B59B3
 P 8950 7050
 F 0 "D44" H 8800 7000 40  0000 C CNN
@@ -1561,7 +1561,7 @@ F 7 "1N4148-0805" H 4550 4750 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D49
+L device1:DIODE D49
 U 1 1 506B59BC
 P 9650 7050
 F 0 "D49" H 9500 7000 40  0000 C CNN
@@ -1576,7 +1576,7 @@ F 7 "1N4148-0805" H 4700 4750 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D54
+L device1:DIODE D54
 U 1 1 506B59C5
 P 10350 7050
 F 0 "D54" H 10200 7000 40  0000 C CNN
@@ -1591,7 +1591,7 @@ F 7 "1N4148-0805" H 4850 4750 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D59
+L device1:DIODE D59
 U 1 1 506B59CE
 P 11050 7050
 F 0 "D59" H 10900 7000 40  0000 C CNN
@@ -1606,7 +1606,7 @@ F 7 "1N4148-0805" H 5000 4750 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D64
+L device1:DIODE D64
 U 1 1 506B59D7
 P 11750 7350
 F 0 "D64" H 11600 7300 40  0000 C CNN
@@ -1621,7 +1621,7 @@ F 7 "1N4148-0805" H 5150 4750 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D69
+L device1:DIODE D69
 U 1 1 506B59E0
 P 12450 7650
 F 0 "D69" H 12300 7600 40  0000 C CNN
@@ -1636,7 +1636,7 @@ F 7 "1N4148-0805" H 5300 4750 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D70
+L device1:DIODE D70
 U 1 1 506B59E9
 P 12450 9000
 F 0 "D70" H 12300 8950 40  0000 C CNN
@@ -1651,7 +1651,7 @@ F 7 "1N4148-0805" H 5300 5050 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D65
+L device1:DIODE D65
 U 1 1 506B59F2
 P 11750 9000
 F 0 "D65" H 11600 8950 40  0000 C CNN
@@ -1666,7 +1666,7 @@ F 7 "1N4148-0805" H 5150 5050 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D60
+L device1:DIODE D60
 U 1 1 506B59FB
 P 11050 9300
 F 0 "D60" H 10900 9250 40  0000 C CNN
@@ -1681,7 +1681,7 @@ F 7 "1N4148-0805" H 5000 5050 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D55
+L device1:DIODE D55
 U 1 1 506B5A04
 P 10350 9000
 F 0 "D55" H 10200 8950 40  0000 C CNN
@@ -1696,7 +1696,7 @@ F 7 "1N4148-0805" H 4850 5050 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D68
+L device1:DIODE D68
 U 1 1 506B5A16
 P 12450 6200
 F 0 "D68" H 12300 6150 40  0000 C CNN
@@ -1711,7 +1711,7 @@ F 7 "1N4148-0805" H 5300 4700 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D63
+L device1:DIODE D63
 U 1 1 506B5A1F
 P 11750 5550
 F 0 "D63" H 11600 5500 40  0000 C CNN
@@ -1726,7 +1726,7 @@ F 7 "1N4148-0805" H 5150 4350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D58
+L device1:DIODE D58
 U 1 1 506B5A28
 P 11050 5550
 F 0 "D58" H 10900 5500 40  0000 C CNN
@@ -1741,7 +1741,7 @@ F 7 "1N4148-0805" H 5000 4350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D53
+L device1:DIODE D53
 U 1 1 506B5A31
 P 10350 5550
 F 0 "D53" H 10200 5500 40  0000 C CNN
@@ -1756,7 +1756,7 @@ F 7 "1N4148-0805" H 4850 4350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D67
+L device1:DIODE D67
 U 1 1 506B5A3A
 P 12450 4550
 F 0 "D67" H 12300 4500 40  0000 C CNN
@@ -1771,7 +1771,7 @@ F 7 "1N4148-0805" H 5300 3950 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D62
+L device1:DIODE D62
 U 1 1 506B5A43
 P 11750 4550
 F 0 "D62" H 11600 4500 40  0000 C CNN
@@ -1786,7 +1786,7 @@ F 7 "1N4148-0805" H 5150 3950 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D57
+L device1:DIODE D57
 U 1 1 506B5A4C
 P 11050 4550
 F 0 "D57" H 10900 4500 40  0000 C CNN
@@ -1801,7 +1801,7 @@ F 7 "1N4148-0805" H 5000 3950 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D66
+L device1:DIODE D66
 U 1 1 506B5A55
 P 12450 3700
 F 0 "D66" H 12300 3650 40  0000 C CNN
@@ -1816,7 +1816,7 @@ F 7 "1N4148-0805" H 5300 3700 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D61
+L device1:DIODE D61
 U 1 1 506B5A5E
 P 11750 3350
 F 0 "D61" H 11600 3300 40  0000 C CNN
@@ -1831,7 +1831,7 @@ F 7 "1N4148-0805" H 5150 3350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D56
+L device1:DIODE D56
 U 1 1 506B5A67
 P 11050 3350
 F 0 "D56" H 10900 3300 40  0000 C CNN
@@ -1846,7 +1846,7 @@ F 7 "1N4148-0805" H 5000 3350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D24
+L device1:DIODE D24
 U 1 1 506B5A70
 P 6150 7050
 F 0 "D24" H 6000 7000 40  0000 C CNN
@@ -1861,7 +1861,7 @@ F 7 "1N4148-0805" H 3950 4750 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D34
+L device1:DIODE D34
 U 1 1 506B5A79
 P 7550 7050
 F 0 "D34" H 7400 7000 40  0000 C CNN
@@ -1876,7 +1876,7 @@ F 7 "1N4148-0805" H 4250 4750 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D39
+L device1:DIODE D39
 U 1 1 506B5A82
 P 8250 7050
 F 0 "D39" H 8100 7000 40  0000 C CNN
@@ -1891,7 +1891,7 @@ F 7 "1N4148-0805" H 4400 4750 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D5
+L device1:DIODE D5
 U 1 1 506B5A8B
 P 3350 9000
 F 0 "D5" H 3200 8950 40  0000 C CNN
@@ -1906,7 +1906,7 @@ F 7 "1N4148-0805" H 3350 5050 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D10
+L device1:DIODE D10
 U 1 1 506B5A94
 P 4050 9150
 F 0 "D10" H 3900 9100 40  0000 C CNN
@@ -1921,7 +1921,7 @@ F 7 "1N4148-0805" H 3500 5050 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D15
+L device1:DIODE D15
 U 1 1 506B5A9D
 P 4750 9000
 F 0 "D15" H 4600 8950 40  0000 C CNN
@@ -1936,7 +1936,7 @@ F 7 "1N4148-0805" H 3650 5050 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D30
+L device1:DIODE D30
 U 1 1 506B5D8C
 P 6850 9350
 F 0 "D30" H 6700 9300 40  0000 C CNN
@@ -1951,7 +1951,7 @@ F 7 "1N4148-0805" H 4100 5050 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D3
+L device1:DIODE D3
 U 1 1 506B5DE9
 P 3350 6000
 F 0 "D3" H 3200 5950 40  0000 C CNN
@@ -1966,10 +1966,10 @@ F 7 "1N4148-0805" H 3350 4350 60  0001 C CNN "Supplier Symbol"
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:LED-device1 DC3
+L device1:LED D1002
 U 1 1 506E072F
 P 15150 3700
-F 0 "DC3" H 15150 3800 50  0000 C CNN
+F 0 "D1002" H 15150 3800 50  0000 C CNN
 F 1 "LED" H 15150 3600 50  0000 C CNN
 F 2 "MX1A:MX1A-led" H 15150 3700 60  0001 C CNN
 F 3 "" H 15150 3700 60  0001 C CNN
@@ -2149,7 +2149,7 @@ F 3 "" H 9650 8550 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:DIODE-device1 D50
+L device1:DIODE D50
 U 1 1 51374F62
 P 9650 8550
 F 0 "D50" H 9500 8500 40  0000 C CNN
