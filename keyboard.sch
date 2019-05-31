@@ -429,7 +429,7 @@ U 1 1 5A0DBDB3
 P 4250 6200
 F 0 "K1" H 4250 6280 50  0000 C CNN
 F 1 "SW" H 4260 6140 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 4250 6200 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 4250 6200 50  0001 C CNN
 F 3 "" H 4250 6200 50  0001 C CNN
 	1    4250 6200
 	1    0    0    -1  
@@ -865,43 +865,10 @@ Wire Wire Line
 	1850 5200 2650 5200
 Wire Wire Line
 	2650 5200 2650 5450
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5C5EBA1D
-P 3250 4450
-F 0 "TP2" H 3192 4477 50  0000 R CNN
-F 1 "TP" H 3192 4568 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3450 4450 50  0001 C CNN
-F 3 "~" H 3450 4450 50  0001 C CNN
-	1    3250 4450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:TestPoint TP3
-U 1 1 5C5EBB78
-P 3500 4450
-F 0 "TP3" H 3442 4477 50  0000 R CNN
-F 1 "TP" H 3442 4568 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3700 4450 50  0001 C CNN
-F 3 "~" H 3700 4450 50  0001 C CNN
-	1    3500 4450
-	-1   0    0    1   
-$EndComp
 Text GLabel 3450 2300 2    50   Input ~ 0
 CLK
 Text GLabel 3100 5450 0    50   Input ~ 0
 CLK
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5C63C828
-P 3000 4450
-F 0 "TP1" H 2942 4477 50  0000 R CNN
-F 1 "TP" H 2942 4568 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3200 4450 50  0001 C CNN
-F 3 "~" H 3200 4450 50  0001 C CNN
-	1    3000 4450
-	-1   0    0    1   
-$EndComp
 $Comp
 L Device:C_Small C8
 U 1 1 5C943892
@@ -1088,36 +1055,6 @@ Wire Wire Line
 	2200 1550 2200 1400
 Wire Wire Line
 	2200 1400 2150 1400
-Text GLabel 3100 5850 0    50   Input ~ 0
-D_TX
-Text GLabel 3100 5950 0    50   Input ~ 0
-D_RX
-Text GLabel 3500 3900 1    50   Input ~ 0
-D_TX
-Text GLabel 3250 3900 1    50   Input ~ 0
-D_RX
-$Comp
-L Connector:TestPoint TP5
-U 1 1 5CE90B6C
-P 3500 3900
-F 0 "TP5" H 3442 3927 50  0000 R CNN
-F 1 "TP" H 3442 4018 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3700 3900 50  0001 C CNN
-F 3 "~" H 3700 3900 50  0001 C CNN
-	1    3500 3900
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:TestPoint TP4
-U 1 1 5CEC40AA
-P 3250 3900
-F 0 "TP4" H 3192 3927 50  0000 R CNN
-F 1 "TP" H 3192 4018 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3450 3900 50  0001 C CNN
-F 3 "~" H 3450 3900 50  0001 C CNN
-	1    3250 3900
-	-1   0    0    1   
-$EndComp
 NoConn ~ 3100 5150
 NoConn ~ 3100 5650
 Wire Wire Line
@@ -1203,16 +1140,10 @@ F 3 "~" H 5600 7250 50  0001 C CNN
 	1    5600 7250
 	1    0    0    -1  
 $EndComp
-Text GLabel 3500 4450 1    50   Input ~ 0
-MISO
 Text GLabel 3100 5350 0    50   Input ~ 0
 MISO
 Text GLabel 3100 5250 0    50   Input ~ 0
 MOSI
-Text GLabel 3250 4450 1    50   Input ~ 0
-MOSI
-Text GLabel 3000 4450 1    50   Input ~ 0
-CLK
 Wire Bus Line
 	3850 1250 5050 1250
 Text Label 5050 7650 0    50   ~ 0
@@ -1327,6 +1258,8 @@ Wire Wire Line
 Text Notes 6350 4900 0    50   ~ 10
 Please check your \nLED pinset carefully.
 Connection ~ 3850 1250
+NoConn ~ 3100 5850
+NoConn ~ 3100 5950
 Wire Bus Line
 	2100 1250 3850 1250
 Wire Bus Line
