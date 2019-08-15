@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name leds-rescue)(type Legacy)(uri ${KIPRJMOD}/leds-rescue.lib)(options "")(descr ""))
-)
