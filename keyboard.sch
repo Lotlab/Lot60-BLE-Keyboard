@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
-Title "ukbdc - schematic"
-Date "17 jul 2013"
+Title "Lot60-BLE - schematic"
+Date "2019-08-15"
 Rev ""
-Comp "komar"
+Comp "Lotlab"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -392,37 +392,10 @@ F 3 "" H 3500 6200 50  0000 C CNN
 	1    3500 6200
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:C_Small C3
-U 1 1 5A0DBAA2
-P 3650 6350
-F 0 "C3" H 3660 6420 50  0000 L CNN
-F 1 "NC/47pF" H 3660 6270 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3650 6350 50  0001 C CNN
-F 3 "~" H 3650 6350 50  0000 C CNN
-	1    3650 6350
-	1    0    0    -1  
-$EndComp
 Text GLabel 3250 6200 0    60   Input ~ 0
 UD_P
 Wire Wire Line
 	3250 6200 3400 6200
-Wire Wire Line
-	3600 6200 3650 6200
-Wire Wire Line
-	3650 6250 3650 6200
-Connection ~ 3650 6200
-$Comp
-L power:GND #PWR07
-U 1 1 5A0DBD78
-P 3650 6450
-F 0 "#PWR07" H 3650 6200 50  0001 C CNN
-F 1 "GND" H 3650 6300 50  0000 C CNN
-F 2 "" H 3650 6450 50  0001 C CNN
-F 3 "" H 3650 6450 50  0001 C CNN
-	1    3650 6450
-	1    0    0    -1  
-$EndComp
 $Comp
 L Switch:SW_Push K1
 U 1 1 5A0DBDB3
@@ -434,14 +407,12 @@ F 3 "" H 4250 6200 50  0001 C CNN
 	1    4250 6200
 	1    0    0    -1  
 $EndComp
-Text Notes 3850 6750 0    60   ~ 0
-K1 start download,\nplace near to UDP line.
+Text Notes 2750 6600 0    60   ~ 0
+Press K1 to let CH552 enter download mode.\nPlace K1 near to UDP line.
 Wire Wire Line
 	8950 5600 8950 5650
 Wire Wire Line
 	8700 5600 8950 5600
-Wire Wire Line
-	3650 6200 4050 6200
 Entry Wire Line
 	2500 3050 2600 3150
 Entry Wire Line
@@ -536,7 +507,7 @@ Text Label 2800 1550 1    50   ~ 0
 col13
 Text Label 2900 1550 1    50   ~ 0
 col14
-Text Label 3100 3050 1    50   ~ 0
+Text Label 3450 2500 0    50   ~ 0
 caps
 Text Label 3000 3050 1    50   ~ 0
 led1
@@ -866,9 +837,9 @@ Wire Wire Line
 Wire Wire Line
 	2650 5200 2650 5450
 Text GLabel 3450 2300 2    50   Input ~ 0
-CLK
+UART_TX
 Text GLabel 3100 5450 0    50   Input ~ 0
-CLK
+UART_TX
 $Comp
 L Device:C_Small C8
 U 1 1 5C943892
@@ -1069,8 +1040,6 @@ Text Label 3000 1550 1    50   ~ 0
 GPIO0
 Text Label 3450 2600 0    50   ~ 0
 GPIO1
-Text Label 3450 2500 0    50   ~ 0
-GPIO2
 Wire Wire Line
 	2800 2850 2800 3050
 Wire Wire Line
@@ -1079,27 +1048,8 @@ Entry Wire Line
 	2900 3050 3000 3150
 Entry Wire Line
 	2800 3050 2900 3150
-Entry Wire Line
-	5050 6650 5150 6750
-Wire Wire Line
-	5150 6750 5400 6750
-Text Label 5150 6750 0    50   ~ 0
-GPIO2
-$Comp
-L Jumper:SolderJumper_2_Bridged JP1
-U 1 1 5D27A02A
-P 5550 6750
-F 0 "JP1" H 5550 6950 50  0000 C CNN
-F 1 "Jumper" H 5550 6850 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm" H 5550 6750 50  0001 C CNN
-F 3 "~" H 5550 6750 50  0001 C CNN
-	1    5550 6750
-	-1   0    0    1   
-$EndComp
-Text GLabel 5700 6750 2    50   Input ~ 0
-MOSI
 Text GLabel 3450 2400 2    50   Input ~ 0
-MISO
+UART_RX
 Entry Wire Line
 	5050 7050 5150 7150
 Entry Wire Line
@@ -1112,11 +1062,11 @@ Wire Wire Line
 	5150 7250 5400 7250
 Wire Wire Line
 	5150 7350 5400 7350
-Text Label 5150 7350 0    50   ~ 0
+Text Label 5150 7150 0    50   ~ 0
 GPIO2
 Text Label 5150 7250 0    50   ~ 0
 GPIO1
-Text Label 5150 7150 0    50   ~ 0
+Text Label 5150 7350 0    50   ~ 0
 GPIO0
 $Comp
 L power:GND #PWR021
@@ -1141,9 +1091,7 @@ F 3 "~" H 5600 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3100 5350 0    50   Input ~ 0
-MISO
-Text GLabel 3100 5250 0    50   Input ~ 0
-MOSI
+UART_RX
 Wire Bus Line
 	3850 1250 5050 1250
 Text Label 5050 7650 0    50   ~ 0
@@ -1260,6 +1208,17 @@ Please check your \nLED pinset carefully.
 Connection ~ 3850 1250
 NoConn ~ 3100 5850
 NoConn ~ 3100 5950
+NoConn ~ 3100 5250
+Wire Wire Line
+	3600 6200 4050 6200
+Text Label 3100 3050 1    50   ~ 0
+GPIO2
+Entry Wire Line
+	5050 6700 5150 6800
+Text Label 5150 6800 0    50   ~ 0
+GPIO2
+Wire Wire Line
+	5150 6800 5400 6800
 Wire Bus Line
 	2100 1250 3850 1250
 Wire Bus Line
@@ -1268,4 +1227,26 @@ Wire Bus Line
 	2200 3150 3850 3150
 Wire Bus Line
 	5050 1250 5050 7650
+$Comp
+L Switch:SW_Push K2
+U 1 1 5D5B2681
+P 5600 6800
+F 0 "K2" H 5600 6880 50  0000 C CNN
+F 1 "SW" H 5610 6740 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 5600 6800 50  0001 C CNN
+F 3 "" H 5600 6800 50  0001 C CNN
+	1    5600 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5D5B2ED7
+P 5800 6800
+F 0 "#PWR07" H 5800 6550 50  0001 C CNN
+F 1 "GND" H 5805 6627 50  0000 C CNN
+F 2 "" H 5800 6800 50  0001 C CNN
+F 3 "" H 5800 6800 50  0001 C CNN
+	1    5800 6800
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
