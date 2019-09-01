@@ -393,7 +393,7 @@
     (add_net VCC)
   )
 
-  (module Customv2:Cirno_38113046_mask (layer Back) (tedit 0) (tstamp 5D6D6F41)
+  (module Customv2:Cirno_38113046_mask locked (layer Back) (tedit 0) (tstamp 5D6D6F41)
     (at 229.5901 149.8202 180)
     (fp_text reference G*** (at 0 0) (layer B.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
