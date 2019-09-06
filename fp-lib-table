@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name MX1A)(type KiCad)(uri "$(KIPRJMOD)/mx1a.pretty")(options "")(descr ""))
+  (lib (name GH60BLE)(type KiCad)(uri ${KIPRJMOD}/GH60BLE.pretty)(options "")(descr ""))
 )
