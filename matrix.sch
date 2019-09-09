@@ -878,7 +878,7 @@ F 3 "" H 3300 5450 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device1:LED D100
+L Device:LED D100
 U 1 1 5042BB59
 P 14550 3700
 F 0 "D100" H 14550 3800 50  0000 C CNN
@@ -886,10 +886,10 @@ F 1 "LED" H 14550 3600 50  0000 C CNN
 F 2 "MX1A:MX1A-led" H 14550 3700 60  0001 C CNN
 F 3 "" H 14550 3700 60  0001 C CNN
 	1    14550 3700
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
-L device1:LED D1001
+L Device:LED D1001
 U 1 1 5042BEB0
 P 14850 3700
 F 0 "D1001" H 14850 3800 50  0000 C CNN
@@ -897,7 +897,7 @@ F 1 "LED" H 14850 3600 50  0000 C CNN
 F 2 "MX1A:MX1A-led" H 14850 3700 60  0001 C CNN
 F 3 "" H 14850 3700 60  0001 C CNN
 	1    14850 3700
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 Text HLabel 1800 2950 0    60   3State ~ 0
 row1
@@ -938,7 +938,7 @@ col13
 Text HLabel 12700 1400 1    60   3State ~ 0
 col14
 $Comp
-L device1:R R100
+L Device:R R100
 U 1 1 5043A0D0
 P 14550 3000
 F 0 "R100" V 14630 3000 50  0000 C CNN
@@ -995,7 +995,7 @@ F 3 "" H 12450 7650 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device1:DIODE D6
+L Diode:1N4148 D6
 U 1 1 506B1C22
 P 4050 3350
 F 0 "D6" H 3900 3300 40  0000 C CNN
@@ -1007,10 +1007,10 @@ F 5 "CD4148WS(0805C)" H 3500 3350 60  0001 C CNN "Product"
 F 6 "TME" H 3500 3350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3500 3350 60  0001 C CNN "Supplier Symbol"
 	1    4050 3350
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D11
+L Diode:1N4148 D11
 U 1 1 506B1C2B
 P 4750 3350
 F 0 "D11" H 4600 3300 40  0000 C CNN
@@ -1022,10 +1022,10 @@ F 5 "CD4148WS(0805C)" H 3650 3350 60  0001 C CNN "Product"
 F 6 "TME" H 3650 3350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3650 3350 60  0001 C CNN "Supplier Symbol"
 	1    4750 3350
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D2
+L Diode:1N4148 D2
 U 1 1 506B1C34
 P 3350 4550
 F 0 "D2" H 3200 4500 40  0000 C CNN
@@ -1037,10 +1037,10 @@ F 5 "CD4148WS(0805C)" H 3350 3950 60  0001 C CNN "Product"
 F 6 "TME" H 3350 3950 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3350 3950 60  0001 C CNN "Supplier Symbol"
 	1    3350 4550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D4
+L Diode:1N4148 D4
 U 1 1 506B1C3D
 P 3350 7350
 F 0 "D4" H 3200 7300 40  0000 C CNN
@@ -1052,10 +1052,10 @@ F 5 "CD4148WS(0805C)" H 3350 4750 60  0001 C CNN "Product"
 F 6 "TME" H 3350 4750 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3350 4750 60  0001 C CNN "Supplier Symbol"
 	1    3350 7350
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D7
+L Diode:1N4148 D7
 U 1 1 506B1C46
 P 4050 4550
 F 0 "D7" H 3900 4500 40  0000 C CNN
@@ -1067,10 +1067,10 @@ F 5 "CD4148WS(0805C)" H 3500 3950 60  0001 C CNN "Product"
 F 6 "TME" H 3500 3950 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3500 3950 60  0001 C CNN "Supplier Symbol"
 	1    4050 4550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D8
+L Diode:1N4148 D8
 U 1 1 506B1C4F
 P 4050 5550
 F 0 "D8" H 3900 5500 40  0000 C CNN
@@ -1082,10 +1082,10 @@ F 5 "CD4148WS(0805C)" H 3500 4350 60  0001 C CNN "Product"
 F 6 "TME" H 3500 4350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3500 4350 60  0001 C CNN "Supplier Symbol"
 	1    4050 5550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D12
+L Diode:1N4148 D12
 U 1 1 506B4278
 P 4750 4550
 F 0 "D12" H 4600 4500 40  0000 C CNN
@@ -1097,10 +1097,10 @@ F 5 "CD4148WS(0805C)" H 3650 3950 60  0001 C CNN "Product"
 F 6 "TME" H 3650 3950 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3650 3950 60  0001 C CNN "Supplier Symbol"
 	1    4750 4550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D13
+L Diode:1N4148 D13
 U 1 1 506B4281
 P 4750 5550
 F 0 "D13" H 4600 5500 40  0000 C CNN
@@ -1112,10 +1112,10 @@ F 5 "CD4148WS(0805C)" H 3650 4350 60  0001 C CNN "Product"
 F 6 "TME" H 3650 4350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3650 4350 60  0001 C CNN "Supplier Symbol"
 	1    4750 5550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D9
+L Diode:1N4148 D9
 U 1 1 506B428A
 P 4050 7050
 F 0 "D9" H 3900 7000 40  0000 C CNN
@@ -1127,10 +1127,10 @@ F 5 "CD4148WS(0805C)" H 3500 4750 60  0001 C CNN "Product"
 F 6 "TME" H 3500 4750 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3500 4750 60  0001 C CNN "Supplier Symbol"
 	1    4050 7050
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D14
+L Diode:1N4148 D14
 U 1 1 506B4293
 P 4750 7050
 F 0 "D14" H 4600 7000 40  0000 C CNN
@@ -1142,10 +1142,10 @@ F 5 "CD4148WS(0805C)" H 3650 4750 60  0001 C CNN "Product"
 F 6 "TME" H 3650 4750 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3650 4750 60  0001 C CNN "Supplier Symbol"
 	1    4750 7050
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D26
+L Diode:1N4148 D26
 U 1 1 506B42A5
 P 6850 3350
 F 0 "D26" H 6700 3300 40  0000 C CNN
@@ -1157,10 +1157,10 @@ F 5 "CD4148WS(0805C)" H 4100 3350 60  0001 C CNN "Product"
 F 6 "TME" H 4100 3350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4100 3350 60  0001 C CNN "Supplier Symbol"
 	1    6850 3350
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D27
+L Diode:1N4148 D27
 U 1 1 506B42AE
 P 6850 4550
 F 0 "D27" H 6700 4500 40  0000 C CNN
@@ -1172,10 +1172,10 @@ F 5 "CD4148WS(0805C)" H 4100 3950 60  0001 C CNN "Product"
 F 6 "TME" H 4100 3950 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4100 3950 60  0001 C CNN "Supplier Symbol"
 	1    6850 4550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D28
+L Diode:1N4148 D28
 U 1 1 506B42B7
 P 6850 5550
 F 0 "D28" H 6700 5500 40  0000 C CNN
@@ -1187,10 +1187,10 @@ F 5 "CD4148WS(0805C)" H 4100 4350 60  0001 C CNN "Product"
 F 6 "TME" H 4100 4350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4100 4350 60  0001 C CNN "Supplier Symbol"
 	1    6850 5550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D29
+L Diode:1N4148 D29
 U 1 1 506B42C0
 P 6850 7050
 F 0 "D29" H 6700 7000 40  0000 C CNN
@@ -1202,7 +1202,7 @@ F 5 "CD4148WS(0805C)" H 4100 4750 60  0001 C CNN "Product"
 F 6 "TME" H 4100 4750 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4100 4750 60  0001 C CNN "Supplier Symbol"
 	1    6850 7050
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L keyboard-rescue:MX1A-mx1a-simple S19
@@ -1216,7 +1216,7 @@ F 3 "" H 5450 7050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device1:DIODE D16
+L Diode:1N4148 D16
 U 1 1 506B438B
 P 5450 3350
 F 0 "D16" H 5300 3300 40  0000 C CNN
@@ -1228,10 +1228,10 @@ F 5 "CD4148WS(0805C)" H 3800 3350 60  0001 C CNN "Product"
 F 6 "TME" H 3800 3350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3800 3350 60  0001 C CNN "Supplier Symbol"
 	1    5450 3350
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D17
+L Diode:1N4148 D17
 U 1 1 506B4394
 P 5450 4550
 F 0 "D17" H 5300 4500 40  0000 C CNN
@@ -1243,10 +1243,10 @@ F 5 "CD4148WS(0805C)" H 3800 3950 60  0001 C CNN "Product"
 F 6 "TME" H 3800 3950 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3800 3950 60  0001 C CNN "Supplier Symbol"
 	1    5450 4550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D18
+L Diode:1N4148 D18
 U 1 1 506B439D
 P 5450 5550
 F 0 "D18" H 5300 5500 40  0000 C CNN
@@ -1258,10 +1258,10 @@ F 5 "CD4148WS(0805C)" H 3800 4350 60  0001 C CNN "Product"
 F 6 "TME" H 3800 4350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3800 4350 60  0001 C CNN "Supplier Symbol"
 	1    5450 5550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D19
+L Diode:1N4148 D19
 U 1 1 506B43A6
 P 5450 7050
 F 0 "D19" H 5300 7000 40  0000 C CNN
@@ -1273,10 +1273,10 @@ F 5 "CD4148WS(0805C)" H 3800 4750 60  0001 C CNN "Product"
 F 6 "TME" H 3800 4750 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3800 4750 60  0001 C CNN "Supplier Symbol"
 	1    5450 7050
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D21
+L Diode:1N4148 D21
 U 1 1 506B5911
 P 6150 3350
 F 0 "D21" H 6000 3300 40  0000 C CNN
@@ -1288,10 +1288,10 @@ F 5 "CD4148WS(0805C)" H 3950 3350 60  0001 C CNN "Product"
 F 6 "TME" H 3950 3350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3950 3350 60  0001 C CNN "Supplier Symbol"
 	1    6150 3350
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D31
+L Diode:1N4148 D31
 U 1 1 506B591A
 P 7550 3350
 F 0 "D31" H 7400 3300 40  0000 C CNN
@@ -1303,10 +1303,10 @@ F 5 "CD4148WS(0805C)" H 4250 3350 60  0001 C CNN "Product"
 F 6 "TME" H 4250 3350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4250 3350 60  0001 C CNN "Supplier Symbol"
 	1    7550 3350
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D1
+L Diode:1N4148 D1
 U 1 1 506B5923
 P 3350 3350
 F 0 "D1" H 3200 3300 40  0000 C CNN
@@ -1318,10 +1318,10 @@ F 5 "CD4148WS(0805C)" H 3350 3350 60  0001 C CNN "Product"
 F 6 "TME" H 3350 3350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3350 3350 60  0001 C CNN "Supplier Symbol"
 	1    3350 3350
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D23
+L Diode:1N4148 D23
 U 1 1 506B592C
 P 6150 5550
 F 0 "D23" H 6000 5500 40  0000 C CNN
@@ -1333,10 +1333,10 @@ F 5 "CD4148WS(0805C)" H 3950 4350 60  0001 C CNN "Product"
 F 6 "TME" H 3950 4350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3950 4350 60  0001 C CNN "Supplier Symbol"
 	1    6150 5550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D33
+L Diode:1N4148 D33
 U 1 1 506B5935
 P 7550 5550
 F 0 "D33" H 7400 5500 40  0000 C CNN
@@ -1348,10 +1348,10 @@ F 5 "CD4148WS(0805C)" H 4250 4350 60  0001 C CNN "Product"
 F 6 "TME" H 4250 4350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4250 4350 60  0001 C CNN "Supplier Symbol"
 	1    7550 5550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D32
+L Diode:1N4148 D32
 U 1 1 506B593E
 P 7550 4550
 F 0 "D32" H 7400 4500 40  0000 C CNN
@@ -1363,10 +1363,10 @@ F 5 "CD4148WS(0805C)" H 4250 3950 60  0001 C CNN "Product"
 F 6 "TME" H 4250 3950 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4250 3950 60  0001 C CNN "Supplier Symbol"
 	1    7550 4550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D36
+L Diode:1N4148 D36
 U 1 1 506B5947
 P 8250 3350
 F 0 "D36" H 8100 3300 40  0000 C CNN
@@ -1378,10 +1378,10 @@ F 5 "CD4148WS(0805C)" H 4400 3350 60  0001 C CNN "Product"
 F 6 "TME" H 4400 3350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4400 3350 60  0001 C CNN "Supplier Symbol"
 	1    8250 3350
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D41
+L Diode:1N4148 D41
 U 1 1 506B5950
 P 8950 3350
 F 0 "D41" H 8800 3300 40  0000 C CNN
@@ -1393,10 +1393,10 @@ F 5 "CD4148WS(0805C)" H 4550 3350 60  0001 C CNN "Product"
 F 6 "TME" H 4550 3350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4550 3350 60  0001 C CNN "Supplier Symbol"
 	1    8950 3350
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D37
+L Diode:1N4148 D37
 U 1 1 506B5959
 P 8250 4550
 F 0 "D37" H 8100 4500 40  0000 C CNN
@@ -1408,10 +1408,10 @@ F 5 "CD4148WS(0805C)" H 4400 3950 60  0001 C CNN "Product"
 F 6 "TME" H 4400 3950 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4400 3950 60  0001 C CNN "Supplier Symbol"
 	1    8250 4550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D38
+L Diode:1N4148 D38
 U 1 1 506B5962
 P 8250 5550
 F 0 "D38" H 8100 5500 40  0000 C CNN
@@ -1423,10 +1423,10 @@ F 5 "CD4148WS(0805C)" H 4400 4350 60  0001 C CNN "Product"
 F 6 "TME" H 4400 4350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4400 4350 60  0001 C CNN "Supplier Symbol"
 	1    8250 5550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D22
+L Diode:1N4148 D22
 U 1 1 506B596B
 P 6150 4550
 F 0 "D22" H 6000 4500 40  0000 C CNN
@@ -1438,10 +1438,10 @@ F 5 "CD4148WS(0805C)" H 3950 3950 60  0001 C CNN "Product"
 F 6 "TME" H 3950 3950 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3950 3950 60  0001 C CNN "Supplier Symbol"
 	1    6150 4550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D43
+L Diode:1N4148 D43
 U 1 1 506B5974
 P 8950 5550
 F 0 "D43" H 8800 5500 40  0000 C CNN
@@ -1453,10 +1453,10 @@ F 5 "CD4148WS(0805C)" H 4550 4350 60  0001 C CNN "Product"
 F 6 "TME" H 4550 4350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4550 4350 60  0001 C CNN "Supplier Symbol"
 	1    8950 5550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D42
+L Diode:1N4148 D42
 U 1 1 506B597D
 P 8950 4550
 F 0 "D42" H 8800 4500 40  0000 C CNN
@@ -1468,10 +1468,10 @@ F 5 "CD4148WS(0805C)" H 4550 3950 60  0001 C CNN "Product"
 F 6 "TME" H 4550 3950 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4550 3950 60  0001 C CNN "Supplier Symbol"
 	1    8950 4550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D46
+L Diode:1N4148 D46
 U 1 1 506B5986
 P 9650 3350
 F 0 "D46" H 9500 3300 40  0000 C CNN
@@ -1483,10 +1483,10 @@ F 5 "CD4148WS(0805C)" H 4700 3350 60  0001 C CNN "Product"
 F 6 "TME" H 4700 3350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4700 3350 60  0001 C CNN "Supplier Symbol"
 	1    9650 3350
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D47
+L Diode:1N4148 D47
 U 1 1 506B598F
 P 9650 4550
 F 0 "D47" H 9500 4500 40  0000 C CNN
@@ -1498,10 +1498,10 @@ F 5 "CD4148WS(0805C)" H 4700 3950 60  0001 C CNN "Product"
 F 6 "TME" H 4700 3950 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4700 3950 60  0001 C CNN "Supplier Symbol"
 	1    9650 4550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D51
+L Diode:1N4148 D51
 U 1 1 506B5998
 P 10350 3350
 F 0 "D51" H 10200 3300 40  0000 C CNN
@@ -1513,10 +1513,10 @@ F 5 "CD4148WS(0805C)" H 4850 3350 60  0001 C CNN "Product"
 F 6 "TME" H 4850 3350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4850 3350 60  0001 C CNN "Supplier Symbol"
 	1    10350 3350
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D52
+L Diode:1N4148 D52
 U 1 1 506B59A1
 P 10350 4550
 F 0 "D52" H 10200 4500 40  0000 C CNN
@@ -1528,10 +1528,10 @@ F 5 "CD4148WS(0805C)" H 4850 3950 60  0001 C CNN "Product"
 F 6 "TME" H 4850 3950 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4850 3950 60  0001 C CNN "Supplier Symbol"
 	1    10350 4550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D48
+L Diode:1N4148 D48
 U 1 1 506B59AA
 P 9650 5550
 F 0 "D48" H 9500 5500 40  0000 C CNN
@@ -1543,10 +1543,10 @@ F 5 "CD4148WS(0805C)" H 4700 4350 60  0001 C CNN "Product"
 F 6 "TME" H 4700 4350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4700 4350 60  0001 C CNN "Supplier Symbol"
 	1    9650 5550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D44
+L Diode:1N4148 D44
 U 1 1 506B59B3
 P 8950 7050
 F 0 "D44" H 8800 7000 40  0000 C CNN
@@ -1558,10 +1558,10 @@ F 5 "CD4148WS(0805C)" H 4550 4750 60  0001 C CNN "Product"
 F 6 "TME" H 4550 4750 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4550 4750 60  0001 C CNN "Supplier Symbol"
 	1    8950 7050
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D49
+L Diode:1N4148 D49
 U 1 1 506B59BC
 P 9650 7050
 F 0 "D49" H 9500 7000 40  0000 C CNN
@@ -1573,10 +1573,10 @@ F 5 "CD4148WS(0805C)" H 4700 4750 60  0001 C CNN "Product"
 F 6 "TME" H 4700 4750 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4700 4750 60  0001 C CNN "Supplier Symbol"
 	1    9650 7050
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D54
+L Diode:1N4148 D54
 U 1 1 506B59C5
 P 10350 7050
 F 0 "D54" H 10200 7000 40  0000 C CNN
@@ -1588,10 +1588,10 @@ F 5 "CD4148WS(0805C)" H 4850 4750 60  0001 C CNN "Product"
 F 6 "TME" H 4850 4750 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4850 4750 60  0001 C CNN "Supplier Symbol"
 	1    10350 7050
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D59
+L Diode:1N4148 D59
 U 1 1 506B59CE
 P 11050 7050
 F 0 "D59" H 10900 7000 40  0000 C CNN
@@ -1603,10 +1603,10 @@ F 5 "CD4148WS(0805C)" H 5000 4750 60  0001 C CNN "Product"
 F 6 "TME" H 5000 4750 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 5000 4750 60  0001 C CNN "Supplier Symbol"
 	1    11050 7050
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D64
+L Diode:1N4148 D64
 U 1 1 506B59D7
 P 11750 7350
 F 0 "D64" H 11600 7300 40  0000 C CNN
@@ -1618,10 +1618,10 @@ F 5 "CD4148WS(0805C)" H 5150 4750 60  0001 C CNN "Product"
 F 6 "TME" H 5150 4750 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 5150 4750 60  0001 C CNN "Supplier Symbol"
 	1    11750 7350
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D69
+L Diode:1N4148 D69
 U 1 1 506B59E0
 P 12450 7650
 F 0 "D69" H 12300 7600 40  0000 C CNN
@@ -1633,10 +1633,10 @@ F 5 "CD4148WS(0805C)" H 5300 4750 60  0001 C CNN "Product"
 F 6 "TME" H 5300 4750 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 5300 4750 60  0001 C CNN "Supplier Symbol"
 	1    12450 7650
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D70
+L Diode:1N4148 D70
 U 1 1 506B59E9
 P 12450 9000
 F 0 "D70" H 12300 8950 40  0000 C CNN
@@ -1648,10 +1648,10 @@ F 5 "CD4148WS(0805C)" H 5300 5050 60  0001 C CNN "Product"
 F 6 "TME" H 5300 5050 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 5300 5050 60  0001 C CNN "Supplier Symbol"
 	1    12450 9000
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D65
+L Diode:1N4148 D65
 U 1 1 506B59F2
 P 11750 9000
 F 0 "D65" H 11600 8950 40  0000 C CNN
@@ -1663,10 +1663,10 @@ F 5 "CD4148WS(0805C)" H 5150 5050 60  0001 C CNN "Product"
 F 6 "TME" H 5150 5050 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 5150 5050 60  0001 C CNN "Supplier Symbol"
 	1    11750 9000
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D60
+L Diode:1N4148 D60
 U 1 1 506B59FB
 P 11050 9300
 F 0 "D60" H 10900 9250 40  0000 C CNN
@@ -1678,10 +1678,10 @@ F 5 "CD4148WS(0805C)" H 5000 5050 60  0001 C CNN "Product"
 F 6 "TME" H 5000 5050 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 5000 5050 60  0001 C CNN "Supplier Symbol"
 	1    11050 9300
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D55
+L Diode:1N4148 D55
 U 1 1 506B5A04
 P 10350 9000
 F 0 "D55" H 10200 8950 40  0000 C CNN
@@ -1693,10 +1693,10 @@ F 5 "CD4148WS(0805C)" H 4850 5050 60  0001 C CNN "Product"
 F 6 "TME" H 4850 5050 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4850 5050 60  0001 C CNN "Supplier Symbol"
 	1    10350 9000
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D68
+L Diode:1N4148 D68
 U 1 1 506B5A16
 P 12450 6200
 F 0 "D68" H 12300 6150 40  0000 C CNN
@@ -1708,10 +1708,10 @@ F 5 "CD4148WS(0805C)" H 5300 4700 60  0001 C CNN "Product"
 F 6 "TME" H 5300 4700 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 5300 4700 60  0001 C CNN "Supplier Symbol"
 	1    12450 6200
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D63
+L Diode:1N4148 D63
 U 1 1 506B5A1F
 P 11750 5550
 F 0 "D63" H 11600 5500 40  0000 C CNN
@@ -1723,10 +1723,10 @@ F 5 "CD4148WS(0805C)" H 5150 4350 60  0001 C CNN "Product"
 F 6 "TME" H 5150 4350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 5150 4350 60  0001 C CNN "Supplier Symbol"
 	1    11750 5550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D58
+L Diode:1N4148 D58
 U 1 1 506B5A28
 P 11050 5550
 F 0 "D58" H 10900 5500 40  0000 C CNN
@@ -1738,10 +1738,10 @@ F 5 "CD4148WS(0805C)" H 5000 4350 60  0001 C CNN "Product"
 F 6 "TME" H 5000 4350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 5000 4350 60  0001 C CNN "Supplier Symbol"
 	1    11050 5550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D53
+L Diode:1N4148 D53
 U 1 1 506B5A31
 P 10350 5550
 F 0 "D53" H 10200 5500 40  0000 C CNN
@@ -1753,10 +1753,10 @@ F 5 "CD4148WS(0805C)" H 4850 4350 60  0001 C CNN "Product"
 F 6 "TME" H 4850 4350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4850 4350 60  0001 C CNN "Supplier Symbol"
 	1    10350 5550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D67
+L Diode:1N4148 D67
 U 1 1 506B5A3A
 P 12450 4550
 F 0 "D67" H 12300 4500 40  0000 C CNN
@@ -1768,10 +1768,10 @@ F 5 "CD4148WS(0805C)" H 5300 3950 60  0001 C CNN "Product"
 F 6 "TME" H 5300 3950 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 5300 3950 60  0001 C CNN "Supplier Symbol"
 	1    12450 4550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D62
+L Diode:1N4148 D62
 U 1 1 506B5A43
 P 11750 4550
 F 0 "D62" H 11600 4500 40  0000 C CNN
@@ -1783,10 +1783,10 @@ F 5 "CD4148WS(0805C)" H 5150 3950 60  0001 C CNN "Product"
 F 6 "TME" H 5150 3950 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 5150 3950 60  0001 C CNN "Supplier Symbol"
 	1    11750 4550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D57
+L Diode:1N4148 D57
 U 1 1 506B5A4C
 P 11050 4550
 F 0 "D57" H 10900 4500 40  0000 C CNN
@@ -1798,25 +1798,10 @@ F 5 "CD4148WS(0805C)" H 5000 3950 60  0001 C CNN "Product"
 F 6 "TME" H 5000 3950 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 5000 3950 60  0001 C CNN "Supplier Symbol"
 	1    11050 4550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D66
-U 1 1 506B5A55
-P 12450 3700
-F 0 "D66" H 12300 3650 40  0000 C CNN
-F 1 "1N4148" H 12350 3700 40  0000 C CNN
-F 2 "Diode_SMD:D_0805_2012Metric" H 12450 3700 60  0001 C CNN
-F 3 "" H 12450 3700 60  0001 C CNN
-F 4 "DC Components" H 5300 3700 60  0001 C CNN "Vendor"
-F 5 "CD4148WS(0805C)" H 5300 3700 60  0001 C CNN "Product"
-F 6 "TME" H 5300 3700 60  0001 C CNN "Supplier"
-F 7 "1N4148-0805" H 5300 3700 60  0001 C CNN "Supplier Symbol"
-	1    12450 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L device1:DIODE D61
+L Diode:1N4148 D61
 U 1 1 506B5A5E
 P 11750 3350
 F 0 "D61" H 11600 3300 40  0000 C CNN
@@ -1828,25 +1813,10 @@ F 5 "CD4148WS(0805C)" H 5150 3350 60  0001 C CNN "Product"
 F 6 "TME" H 5150 3350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 5150 3350 60  0001 C CNN "Supplier Symbol"
 	1    11750 3350
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D56
-U 1 1 506B5A67
-P 11050 3350
-F 0 "D56" H 10900 3300 40  0000 C CNN
-F 1 "1N4148" H 10950 3350 40  0000 C CNN
-F 2 "Diode_SMD:D_0805_2012Metric" H 11050 3350 60  0001 C CNN
-F 3 "" H 11050 3350 60  0001 C CNN
-F 4 "DC Components" H 5000 3350 60  0001 C CNN "Vendor"
-F 5 "CD4148WS(0805C)" H 5000 3350 60  0001 C CNN "Product"
-F 6 "TME" H 5000 3350 60  0001 C CNN "Supplier"
-F 7 "1N4148-0805" H 5000 3350 60  0001 C CNN "Supplier Symbol"
-	1    11050 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L device1:DIODE D24
+L Diode:1N4148 D24
 U 1 1 506B5A70
 P 6150 7050
 F 0 "D24" H 6000 7000 40  0000 C CNN
@@ -1858,10 +1828,10 @@ F 5 "CD4148WS(0805C)" H 3950 4750 60  0001 C CNN "Product"
 F 6 "TME" H 3950 4750 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3950 4750 60  0001 C CNN "Supplier Symbol"
 	1    6150 7050
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D34
+L Diode:1N4148 D34
 U 1 1 506B5A79
 P 7550 7050
 F 0 "D34" H 7400 7000 40  0000 C CNN
@@ -1873,10 +1843,10 @@ F 5 "CD4148WS(0805C)" H 4250 4750 60  0001 C CNN "Product"
 F 6 "TME" H 4250 4750 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4250 4750 60  0001 C CNN "Supplier Symbol"
 	1    7550 7050
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D39
+L Diode:1N4148 D39
 U 1 1 506B5A82
 P 8250 7050
 F 0 "D39" H 8100 7000 40  0000 C CNN
@@ -1888,10 +1858,10 @@ F 5 "CD4148WS(0805C)" H 4400 4750 60  0001 C CNN "Product"
 F 6 "TME" H 4400 4750 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4400 4750 60  0001 C CNN "Supplier Symbol"
 	1    8250 7050
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D5
+L Diode:1N4148 D5
 U 1 1 506B5A8B
 P 3350 9000
 F 0 "D5" H 3200 8950 40  0000 C CNN
@@ -1903,10 +1873,10 @@ F 5 "CD4148WS(0805C)" H 3350 5050 60  0001 C CNN "Product"
 F 6 "TME" H 3350 5050 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3350 5050 60  0001 C CNN "Supplier Symbol"
 	1    3350 9000
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D10
+L Diode:1N4148 D10
 U 1 1 506B5A94
 P 4050 9150
 F 0 "D10" H 3900 9100 40  0000 C CNN
@@ -1918,10 +1888,10 @@ F 5 "CD4148WS(0805C)" H 3500 5050 60  0001 C CNN "Product"
 F 6 "TME" H 3500 5050 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3500 5050 60  0001 C CNN "Supplier Symbol"
 	1    4050 9150
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D15
+L Diode:1N4148 D15
 U 1 1 506B5A9D
 P 4750 9000
 F 0 "D15" H 4600 8950 40  0000 C CNN
@@ -1933,10 +1903,10 @@ F 5 "CD4148WS(0805C)" H 3650 5050 60  0001 C CNN "Product"
 F 6 "TME" H 3650 5050 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3650 5050 60  0001 C CNN "Supplier Symbol"
 	1    4750 9000
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D30
+L Diode:1N4148 D30
 U 1 1 506B5D8C
 P 6850 9350
 F 0 "D30" H 6700 9300 40  0000 C CNN
@@ -1948,10 +1918,10 @@ F 5 "CD4148WS(0805C)" H 4100 5050 60  0001 C CNN "Product"
 F 6 "TME" H 4100 5050 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4100 5050 60  0001 C CNN "Supplier Symbol"
 	1    6850 9350
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:DIODE D3
+L Diode:1N4148 D3
 U 1 1 506B5DE9
 P 3350 6000
 F 0 "D3" H 3200 5950 40  0000 C CNN
@@ -1963,10 +1933,10 @@ F 5 "CD4148WS(0805C)" H 3350 4350 60  0001 C CNN "Product"
 F 6 "TME" H 3350 4350 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 3350 4350 60  0001 C CNN "Supplier Symbol"
 	1    3350 6000
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
-L device1:LED D1002
+L Device:LED D1002
 U 1 1 506E072F
 P 15150 3700
 F 0 "D1002" H 15150 3800 50  0000 C CNN
@@ -1974,7 +1944,7 @@ F 1 "LED" H 15150 3600 50  0000 C CNN
 F 2 "MX1A:MX1A-led" H 15150 3700 60  0001 C CNN
 F 3 "" H 15150 3700 60  0001 C CNN
 	1    15150 3700
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L keyboard-rescue:MX1A-mx1a-simple S682
@@ -2149,7 +2119,7 @@ F 3 "" H 9650 8550 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device1:DIODE D50
+L Diode:1N4148 D50
 U 1 1 51374F62
 P 9650 8550
 F 0 "D50" H 9500 8500 40  0000 C CNN
@@ -2161,7 +2131,7 @@ F 5 "CD4148WS(0805C)" H 4150 4600 60  0001 C CNN "Product"
 F 6 "TME" H 4150 4600 60  0001 C CNN "Supplier"
 F 7 "1N4148-0805" H 4150 4600 60  0001 C CNN "Supplier Symbol"
 	1    9650 8550
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 Text Notes 9550 10400 0    60   ~ 0
 extra key after\nbackspace
@@ -2310,12 +2280,6 @@ Wire Wire Line
 	3550 5400 3550 5850
 Wire Wire Line
 	3550 5850 3500 5850
-Wire Wire Line
-	14550 3250 14550 3500
-Wire Wire Line
-	14550 3500 14850 3500
-Wire Wire Line
-	14550 3900 14850 3900
 Wire Wire Line
 	12200 6650 12200 7100
 Connection ~ 12200 6650
@@ -2794,8 +2758,6 @@ Connection ~ 3550 5850
 Connection ~ 9450 5150
 Connection ~ 9450 4150
 Connection ~ 9450 2950
-Connection ~ 14850 3500
-Connection ~ 14850 3900
 Wire Wire Line
 	12250 6300 12250 6200
 Connection ~ 12200 5450
@@ -3018,8 +2980,6 @@ Wire Wire Line
 Wire Wire Line
 	4300 4650 4300 5650
 Wire Wire Line
-	3600 4650 3600 6100
-Wire Wire Line
 	3600 6100 3600 7450
 Wire Wire Line
 	4300 5650 4300 7150
@@ -3152,10 +3112,6 @@ Wire Wire Line
 Wire Wire Line
 	9450 2950 10150 2950
 Wire Wire Line
-	14850 3500 15150 3500
-Wire Wire Line
-	14850 3900 15150 3900
-Wire Wire Line
 	12200 5450 12200 5900
 Wire Wire Line
 	12650 6150 12650 6200
@@ -3183,10 +3139,6 @@ Wire Wire Line
 	12200 7100 12200 7250
 Wire Wire Line
 	3100 8150 3100 8600
-Wire Wire Line
-	14550 2750 14550 2600
-Connection ~ 14550 3500
-Connection ~ 14550 3900
 $Comp
 L power:GND #PWR019
 U 1 1 5AAED477
@@ -3198,4 +3150,324 @@ F 3 "" H 14550 4150 50  0001 C CNN
 	1    14550 4150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	14550 3500 14850 3500
+Wire Wire Line
+	14550 3900 14850 3900
+Wire Wire Line
+	14550 2600 14550 2850
+Wire Wire Line
+	14550 3150 14550 3500
+Wire Wire Line
+	14550 3550 14550 3500
+Connection ~ 14550 3500
+Wire Wire Line
+	14550 3850 14550 3900
+Connection ~ 14550 3900
+Wire Wire Line
+	14850 3900 14850 3850
+Connection ~ 14850 3900
+Wire Wire Line
+	14850 3900 15150 3900
+Wire Wire Line
+	14850 3550 14850 3500
+Connection ~ 14850 3500
+Wire Wire Line
+	14850 3500 15150 3500
+Wire Wire Line
+	15150 3550 15150 3500
+Wire Wire Line
+	15150 3900 15150 3850
+$Comp
+L Diode:1N4148 D56
+U 1 1 506B5A67
+P 11050 3350
+F 0 "D56" H 10900 3300 40  0000 C CNN
+F 1 "1N4148" H 10950 3350 40  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 11050 3350 60  0001 C CNN
+F 3 "" H 11050 3350 60  0001 C CNN
+F 4 "DC Components" H 5000 3350 60  0001 C CNN "Vendor"
+F 5 "CD4148WS(0805C)" H 5000 3350 60  0001 C CNN "Product"
+F 6 "TME" H 5000 3350 60  0001 C CNN "Supplier"
+F 7 "1N4148-0805" H 5000 3350 60  0001 C CNN "Supplier Symbol"
+	1    11050 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4148 D66
+U 1 1 506B5A55
+P 12450 3700
+F 0 "D66" H 12300 3650 40  0000 C CNN
+F 1 "1N4148" H 12350 3700 40  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 12450 3700 60  0001 C CNN
+F 3 "" H 12450 3700 60  0001 C CNN
+F 4 "DC Components" H 5300 3700 60  0001 C CNN "Vendor"
+F 5 "CD4148WS(0805C)" H 5300 3700 60  0001 C CNN "Product"
+F 6 "TME" H 5300 3700 60  0001 C CNN "Supplier"
+F 7 "1N4148-0805" H 5300 3700 60  0001 C CNN "Supplier Symbol"
+	1    12450 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3150 3350 3200 3350
+Wire Wire Line
+	3500 3350 3550 3350
+Wire Wire Line
+	3850 3350 3900 3350
+Wire Wire Line
+	4200 3350 4250 3350
+Wire Wire Line
+	4550 3350 4600 3350
+Wire Wire Line
+	4900 3350 4950 3350
+Wire Wire Line
+	5250 3350 5300 3350
+Wire Wire Line
+	5600 3350 5650 3350
+Wire Wire Line
+	5950 3350 6000 3350
+Wire Wire Line
+	6300 3350 6350 3350
+Wire Wire Line
+	6650 3350 6700 3350
+Wire Wire Line
+	7000 3350 7050 3350
+Wire Wire Line
+	7350 3350 7400 3350
+Wire Wire Line
+	7700 3350 7750 3350
+Wire Wire Line
+	8050 3350 8100 3350
+Wire Wire Line
+	8400 3350 8450 3350
+Wire Wire Line
+	8750 3350 8800 3350
+Wire Wire Line
+	9100 3350 9150 3350
+Wire Wire Line
+	9450 3350 9500 3350
+Wire Wire Line
+	9800 3350 9850 3350
+Wire Wire Line
+	10150 3350 10200 3350
+Wire Wire Line
+	10500 3350 10550 3350
+Wire Wire Line
+	10850 3350 10900 3350
+Wire Wire Line
+	11200 3350 11250 3350
+Wire Wire Line
+	11550 3350 11600 3350
+Wire Wire Line
+	11900 3350 11950 3350
+Wire Wire Line
+	12250 3700 12300 3700
+Wire Wire Line
+	12600 3700 12650 3700
+Wire Wire Line
+	12250 4550 12300 4550
+Wire Wire Line
+	12600 4550 12650 4550
+Wire Wire Line
+	11950 4550 11900 4550
+Wire Wire Line
+	11600 4550 11550 4550
+Wire Wire Line
+	11200 4550 11250 4550
+Wire Wire Line
+	10900 4550 10850 4550
+Wire Wire Line
+	10550 4550 10500 4550
+Wire Wire Line
+	10200 4550 10150 4550
+Wire Wire Line
+	9850 4550 9800 4550
+Wire Wire Line
+	9500 4550 9450 4550
+Wire Wire Line
+	9150 4550 9100 4550
+Wire Wire Line
+	8800 4550 8750 4550
+Wire Wire Line
+	8450 4550 8400 4550
+Wire Wire Line
+	8100 4550 8050 4550
+Wire Wire Line
+	7750 4550 7700 4550
+Wire Wire Line
+	7400 4550 7350 4550
+Wire Wire Line
+	7050 4550 7000 4550
+Wire Wire Line
+	6700 4550 6650 4550
+Wire Wire Line
+	6350 4550 6300 4550
+Wire Wire Line
+	6000 4550 5950 4550
+Wire Wire Line
+	5650 4550 5600 4550
+Wire Wire Line
+	5300 4550 5250 4550
+Wire Wire Line
+	4900 4550 4950 4550
+Wire Wire Line
+	4600 4550 4550 4550
+Wire Wire Line
+	4200 4550 4250 4550
+Wire Wire Line
+	3900 4550 3850 4550
+Wire Wire Line
+	3500 4550 3550 4550
+Wire Wire Line
+	3200 4550 3150 4550
+Wire Wire Line
+	3600 4650 3600 6100
+Wire Wire Line
+	3150 6000 3200 6000
+Wire Wire Line
+	3500 6000 3550 6000
+Wire Wire Line
+	3850 5550 3900 5550
+Wire Wire Line
+	4200 5550 4250 5550
+Wire Wire Line
+	4600 5550 4550 5550
+Wire Wire Line
+	4900 5550 4950 5550
+Wire Wire Line
+	5250 5550 5300 5550
+Wire Wire Line
+	5600 5550 5650 5550
+Wire Wire Line
+	5950 5550 6000 5550
+Wire Wire Line
+	6300 5550 6350 5550
+Wire Wire Line
+	6650 5550 6700 5550
+Wire Wire Line
+	7000 5550 7050 5550
+Wire Wire Line
+	7350 5550 7400 5550
+Wire Wire Line
+	7700 5550 7750 5550
+Wire Wire Line
+	8050 5550 8100 5550
+Wire Wire Line
+	8400 5550 8450 5550
+Wire Wire Line
+	8750 5550 8800 5550
+Wire Wire Line
+	9100 5550 9150 5550
+Wire Wire Line
+	9450 5550 9500 5550
+Wire Wire Line
+	9800 5550 9850 5550
+Wire Wire Line
+	10150 5550 10200 5550
+Wire Wire Line
+	10500 5550 10550 5550
+Wire Wire Line
+	10850 5550 10900 5550
+Wire Wire Line
+	11200 5550 11250 5550
+Wire Wire Line
+	11550 5550 11600 5550
+Wire Wire Line
+	11900 5550 11950 5550
+Wire Wire Line
+	12600 6200 12650 6200
+Wire Wire Line
+	12300 6200 12250 6200
+Wire Wire Line
+	12250 7650 12300 7650
+Wire Wire Line
+	12600 7650 12650 7650
+Wire Wire Line
+	11550 7350 11600 7350
+Wire Wire Line
+	11900 7350 11950 7350
+Wire Wire Line
+	11200 7050 11250 7050
+Wire Wire Line
+	10900 7050 10850 7050
+Wire Wire Line
+	10550 7050 10500 7050
+Wire Wire Line
+	10200 7050 10150 7050
+Wire Wire Line
+	9800 7050 9850 7050
+Wire Wire Line
+	9500 7050 9450 7050
+Wire Wire Line
+	9100 7050 9150 7050
+Wire Wire Line
+	8800 7050 8750 7050
+Wire Wire Line
+	8400 7050 8450 7050
+Wire Wire Line
+	8100 7050 8050 7050
+Wire Wire Line
+	7700 7050 7750 7050
+Wire Wire Line
+	7400 7050 7350 7050
+Wire Wire Line
+	7000 7050 7050 7050
+Wire Wire Line
+	6700 7050 6650 7050
+Wire Wire Line
+	6350 7050 6300 7050
+Wire Wire Line
+	6000 7050 5950 7050
+Wire Wire Line
+	5600 7050 5650 7050
+Wire Wire Line
+	5300 7050 5250 7050
+Wire Wire Line
+	4950 7050 4900 7050
+Wire Wire Line
+	4600 7050 4550 7050
+Wire Wire Line
+	4250 7050 4200 7050
+Wire Wire Line
+	3900 7050 3850 7050
+Wire Wire Line
+	3550 7350 3500 7350
+Wire Wire Line
+	3200 7350 3150 7350
+Wire Wire Line
+	3150 9000 3200 9000
+Wire Wire Line
+	3500 9000 3550 9000
+Wire Wire Line
+	3850 9150 3900 9150
+Wire Wire Line
+	4200 9150 4250 9150
+Wire Wire Line
+	4550 9000 4600 9000
+Wire Wire Line
+	4950 9000 4900 9000
+Wire Wire Line
+	6650 9350 6700 9350
+Wire Wire Line
+	7000 9350 7050 9350
+Wire Wire Line
+	9450 8550 9500 8550
+Wire Wire Line
+	9800 8550 9850 8550
+Wire Wire Line
+	10150 9000 10200 9000
+Wire Wire Line
+	10500 9000 10550 9000
+Wire Wire Line
+	10850 9300 10900 9300
+Wire Wire Line
+	11200 9300 11250 9300
+Wire Wire Line
+	11550 9000 11600 9000
+Wire Wire Line
+	11950 9000 11900 9000
+Wire Wire Line
+	12250 9000 12300 9000
+Wire Wire Line
+	12600 9000 12650 9000
 $EndSCHEMATC
