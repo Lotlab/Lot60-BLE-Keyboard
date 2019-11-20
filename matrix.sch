@@ -675,17 +675,6 @@ F 3 "" H 3300 9000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard-rescue:MX1A-mx1a-simple S102
-U 1 1 5040EEA3
-P 4050 8850
-F 0 "S102" H 3900 9100 60  0000 C CNN
-F 1 "MX1A" H 4050 8950 60  0000 C CNN
-F 2 "MX1A:MX1A-simple" H 4050 8850 60  0001 C CNN
-F 3 "" H 4050 8850 60  0001 C CNN
-	1    4050 8850
-	1    0    0    -1  
-$EndComp
-$Comp
 L keyboard-rescue:MX1A-mx1a-simple S101
 U 1 1 5040EEA9
 P 4050 9150
@@ -844,13 +833,13 @@ col7
 $Comp
 L keyboard-rescue:MX1A-mx1a-simple S30
 U 1 1 5040DF35
-P 6800 9350
-F 0 "S30" H 6650 9600 60  0000 C CNN
-F 1 "MX1A" H 6800 9450 60  0000 C CNN
-F 2 "MX1A:MX1A-simple" H 6800 9350 60  0001 C CNN
-F 3 "" H 6800 9350 60  0001 C CNN
-	1    6800 9350
-	1    0    0    -1  
+P 6800 8800
+F 0 "S30" H 6650 9050 60  0000 C CNN
+F 1 "MX1A" H 6800 8900 60  0000 C CNN
+F 2 "MX1A:MX1A-simple" H 6800 8800 60  0001 C CNN
+F 3 "" H 6800 8800 60  0001 C CNN
+	1    6800 8800
+	-1   0    0    1   
 $EndComp
 Text Notes 8700 2450 0    120  ~ 0
 col9
@@ -2142,8 +2131,6 @@ Wire Wire Line
 Wire Wire Line
 	3800 8750 3850 8750
 Connection ~ 3800 8150
-Wire Wire Line
-	3800 8150 3800 8450
 Connection ~ 4500 8150
 Wire Wire Line
 	4500 8150 4500 8600
@@ -2218,8 +2205,6 @@ Wire Wire Line
 Wire Wire Line
 	11950 8400 11950 8850
 Connection ~ 11250 8700
-Wire Wire Line
-	4250 8400 4250 8700
 Wire Wire Line
 	1800 5150 3100 5150
 Wire Wire Line
@@ -2658,8 +2643,6 @@ Wire Wire Line
 Wire Wire Line
 	3850 9150 3850 9250
 Wire Wire Line
-	3850 9250 4300 9250
-Wire Wire Line
 	4550 9100 5000 9100
 Connection ~ 4950 8850
 Connection ~ 3550 8850
@@ -2785,10 +2768,6 @@ Wire Wire Line
 Connection ~ 9900 8650
 Connection ~ 9450 8150
 Connection ~ 12650 3500
-Wire Wire Line
-	3850 8450 3800 8450
-Connection ~ 3800 8450
-Connection ~ 4250 8700
 Connection ~ 7050 8750
 Wire Wire Line
 	6650 8500 6600 8500
@@ -3125,10 +3104,6 @@ Wire Wire Line
 	9450 8150 10100 8150
 Wire Wire Line
 	12650 3500 12650 3700
-Wire Wire Line
-	3800 8450 3800 8750
-Wire Wire Line
-	4250 8700 4250 9000
 Wire Wire Line
 	7050 8750 7050 9200
 Wire Wire Line
@@ -3470,4 +3445,29 @@ Wire Wire Line
 	12250 9000 12300 9000
 Wire Wire Line
 	12600 9000 12650 9000
+Wire Wire Line
+	4250 8400 4250 8850
+Wire Wire Line
+	3850 9250 4300 9250
+$Comp
+L keyboard-rescue:MX1A-mx1a-simple S102
+U 1 1 5040EEA3
+P 4000 8450
+F 0 "S102" H 3850 8700 60  0000 C CNN
+F 1 "MX1A" H 4000 8550 60  0000 C CNN
+F 2 "MX1A:MX1A-simple" H 4000 8450 60  0001 C CNN
+F 3 "" H 4000 8450 60  0001 C CNN
+	1    4000 8450
+	-1   0    0    1   
+$EndComp
+Connection ~ 3800 8600
+Wire Wire Line
+	3800 8600 3800 8750
+Wire Wire Line
+	3800 8150 3800 8600
+Wire Wire Line
+	4200 8850 4250 8850
+Connection ~ 4250 8850
+Wire Wire Line
+	4250 8850 4250 9000
 $EndSCHEMATC
