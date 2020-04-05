@@ -2,13 +2,15 @@
 
 A 60% BLE/USB keyboard. License: CC-BY-SA
 
+PLEASE REMOVE MY LOGO BEFORE SELLING THIS KEYBOARD.
+
 ## Rev A/B
 
 Using nRF51822 as the main controller, CH554 as the USB chip.
 
 Firmware see: [lotlab/nrf51822-keyboard](https://github.com/Lotlab/nrf51822-keyboard).
 
-## Rev C/D/E
+## Rev C/D/E/F
 
 Using nRF52810 as the main controller, CH554 as the USB chip.
 
@@ -19,7 +21,6 @@ Firmware see:  [lotlab/nrf52-keyboard](https://github.com/Lotlab/nrf52-keyboard)
 ### Rev B
 
 - Fix broken ADC check pin.
-
 - Fix ch554 powered by battery problem.
 
 ### Rev C
@@ -42,11 +43,17 @@ Firmware see:  [lotlab/nrf52-keyboard](https://github.com/Lotlab/nrf52-keyboard)
 - Swap pin for GPIO2 and Caps LED.
 - Add reset button for nRF52810. (Reuse with GPIO2)
 
+### Rev F
+
+- Add usb-powered only support.
+
 # Lot60-BLE 键盘硬件
 
 一个60%的蓝牙USB双模开源键盘，授权协议：CC-BY-SA。
 
 此键盘fork自GH60，沿用GH60的键盘孔位和阵列线路。
+
+请不要直接使用此库制作硬件并售卖。若需要售卖，请至少做出一些改动并删除LOGO。
 
 ## 版本 A/B
 
@@ -54,7 +61,7 @@ Firmware see:  [lotlab/nrf52-keyboard](https://github.com/Lotlab/nrf52-keyboard)
 
 键盘固件: [lotlab/nrf51822-keyboard](https://github.com/Lotlab/nrf51822-keyboard).
 
-## 版本 C/D/E
+## 版本 C/D/E/F
 
 使用nRF52810作为键盘主控，CH552/4作为USB控制器。
 
@@ -65,7 +72,6 @@ Firmware see:  [lotlab/nrf52-keyboard](https://github.com/Lotlab/nrf52-keyboard)
 ### Rev B
 
 - 修正电量检测ADC pin不正确的问题
-
 - 修正CH554受到电池供电而在没有USB接入下工作的问题。
 
 ### Rev C
@@ -88,3 +94,6 @@ Firmware see:  [lotlab/nrf52-keyboard](https://github.com/Lotlab/nrf52-keyboard)
 - 交换了GPIO2和大写锁定灯的硬件PIN
 - 为nRF52810增加了Reset按钮（与GPIO2共用）
 
+### Rev F
+
+- 增加了双电源供电
